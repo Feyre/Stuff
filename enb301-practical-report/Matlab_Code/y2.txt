@@ -1,0 +1,9 @@
+Results from calculating km and beta with set alpha value.
+
+Precalculated alpha: 170.3407
+km_ms: 413.8277 437.8758 426.8537
+km_rms: 413.8277 436.8737 426.8537
+beta_ms: 0.0000 0.2041 0.0000
+beta_rms 0.0000 0.1837 0.0000
+km_mean: 426.6867
+beta_mean 0.0646

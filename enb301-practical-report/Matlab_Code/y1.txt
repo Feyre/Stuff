@@ -1,0 +1,8 @@
+Results from calculating km and alpha
+
+km_ms: 289.5792 496.9940 495.9920
+km_rms: 265.5311 500.0000 483.9679
+alpha_ms: 118.2365 201.4028 198.3968
+alpha_rms 108.2164 202.4048 193.3868
+km_mean: 422.0107
+alpha_mean 170.3407
