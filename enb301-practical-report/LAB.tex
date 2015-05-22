@@ -267,6 +267,29 @@ B5
 
 
 \subsection{Part C}
+As mentioned previously, the goal of experiment C was to construct a closed loop control system (feedback) for the position of the motor (voltage across the potentiometer); making use of the estimated open loop response variables found in part B ($K_m$ and $\alpha$). 
+
+The pre-experimental aspect of this section required the breakdown and analysis of the circuit diagram captured in figure~\ref{fig:c1_2_}, the full method and calculations has been provided in section~\ref{sec:c}; the in depth analysis resulted in an estimated overall transfer function for the system. 
+
+$$ G_c(s) = \frac{\frac{R_f}{R_1}K_m} {s^2 + s\alpha + \frac{R_f}{R_1}K_m} $$
+$$ G_c(s) = \frac{1075.8} {s^2 + 38.61s + 1075.8} $$
+
+After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the correct polarity of the motor, the response of the system was captured and saved by the digital CRO. The closed loop response of this system was measured \textcolor{red}{3} times, this graphical representation of this data has been included below.\\
+
+\textbf{FIGURES}\\
+
+WHAT WE CAN SEE FROM THIS, and here is the closed loop response with experimentally found gain required to produce an overshoot of 5\%.\\
+
+\textbf{FIGURES}\\
+
+WHAT WE CAN SEE FROM THIS\\
+
+compare models\\
+compare gains\\
+new method\\
+
+
+
 closed loop control system for the position of the motor
 overall TF
 estimated gain for 5\% OS
@@ -867,8 +890,15 @@ close
 
 
 
+
+
+
+
+
+
 \pagebreak
 \subsubsection{Part C}
+\label{sec:c}
 \begin{enumerate}
 	\item \textbf{Re-draw figure~\ref{fig:c1_2_} and place boxes around the set of components that  correspond to each functional element of the control system.} \\
     
@@ -883,7 +913,6 @@ close
 	\includegraphics[width=.8\textwidth]{FigsC/c1.png}
 	\caption{\label{fig:c1}Closed Loop Motor Control System}
 	\end{figure}
-    
     
     
     
