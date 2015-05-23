@@ -234,17 +234,13 @@ The final experiment, using the same circuit constructed in the previous experim
 %The last pre-lab component requires the familiarization of the complete procedure outlined in section C, 
 \textbf{and more}\\
 
-\textbf{SETUP:}
-\begin{enumerate}
-	\item \textbf{using old circuit with set gain}
-\end{enumerate} 
-
 \textbf{ANALYSIS:}
 \begin{enumerate}
 	\item The closed loop response of the system was estimated \textbf{using the method outlined in the previous procedures}
 	\item The $K_m$ and $\alpha$ values were then compared to \textbf{the method outlined in worksheet}
 	\item Using the same circuit constructed in the previous procedure (system gain set at the experimentally found gain required to produce a 5\% OS) the overshoot \textbf{and settling time} were measured and recorded, for input frequencies of 0.5Hz, 0.75Hz, 1Hz, 1.25Hz and 1.5Hz. 
-	\item The impact of altering the gain was then examined \textbf{BY STUFF IDK} 
+	\item Additionally, the systems response for each frequency was also recorded and saved in-case of future need.
+	\item The impact of altering the gain was then examined, as the response of the system was recorded twice more; using a new gain value each time.
 	\item simulink/matlab shit
 	\item PD/PID controller 
 \end{enumerate}
@@ -315,8 +311,11 @@ C8
 
 \pagebreak
 \subsection{Part D}
-the response of the closed loop system to different input frequencies
-C8
+Experiment D explored the effect of input frequency on the closed loop system response, as well as examining the effect of increasing or decreasing the systems gain. \\
+ 
+D1/C8 \\
+
+
  
 
 
@@ -1125,8 +1124,90 @@ Add the actual OS from prac/theo \\
 \subsubsection{Part D}
 \begin{enumerate}
 	\item stuff
-	\item comment
+	
+	
+	
+	
+	
+	\item The overshoot and settling time were measured over five different input frequencies in order to determine the effect over varying the input signals frequency. The systems response to these signals was also recorded, and can be found as a set of graphical time domain plots below.
+	\begin{figure}[H]
+	  \begin{subfigure}{0.5\textwidth}
+	  \includegraphics[width=0.9\linewidth]{Matlab_Figures/y2_dataset1_ms.eps} 
+	  \caption{Closed loop time domain response to 0.5Hz input.}
+	  \label{fig:subim1}
+	  \end{subfigure}
+	  \begin{subfigure}{0.5\textwidth}
+	  \includegraphics[width=0.9\linewidth]{Matlab_Figures/y2_dataset1_rms.eps}
+	  \caption{Closed loop time domain response to 0.75Hz input.}
+	  \label{fig:subim2}
+	  \end{subfigure}
+	  
+	  \begin{subfigure}{0.5\textwidth}
+	  \includegraphics[width=0.9\linewidth]{Matlab_Figures/y2_dataset1_rms.eps}
+	  \caption{Closed loop time domain response to 1Hz input.}
+	  \label{fig:subim2}
+	  \end{subfigure}
+	  \begin{subfigure}{0.5\textwidth}
+	  \includegraphics[width=0.9\linewidth]{Matlab_Figures/y2_dataset1_rms.eps}
+	  \caption{Closed loop time domain response to 1.25Hz input.}
+	  \label{fig:subim2}
+	  \end{subfigure}
+	  
+	  \begin{subfigure}{0.5\textwidth}
+	  \includegraphics[width=0.9\linewidth]{Matlab_Figures/y2_dataset1_rms.eps}
+	  \caption{Closed loop time domain response to 1.5Hz input.}
+	  \label{fig:subim2}
+	  \end{subfigure}
+	\caption{\label{fig:rand}Systems response to various input frequencies.}
+	\end{figure}
+	
+	\pagebreak
+	The peak overshoot and \textbf{settling time} were measured using the cursors \textbf{stuuff}\\
+	$$ \%OS = \frac{V_{peak}-V_{average}}{V_{average}} $$
+	\begin{align*}
+	OS(0.5Hz) 	&= \frac{525-495}{495} = 6.1 	\\
+	OS(0.75Hz) 	&= \frac{523-495}{495} = 5.7 	\\
+	OS(1Hz) 	&= \frac{525-495}{495} = 6.1 	\\
+	OS(1.25Hz) 	&= \frac{525-495}{495} = 6.1 	\\
+	OS(1.5Hz) 	&= \frac{524-495}{495} = 5.8 	
+	\end{align*}
+	
+	The results of this analysis can be found in the following table.
+	
+\begin{center}
+    \begin{tabular}{| c | c | c |}
+    \hline
+    Input Frequency (Hz)  & Overshoot (\%)    & Settling time (s) 	\\ \hline
+    0.5  	                  & 6.1                   & 1 			\\ \hline
+	0.75  	                  & 5.7                   & -1 			\\ \hline
+	1		                  & 6.1                   & 1			\\ \hline
+	1.25	                  & 6.5                   & 1			\\ \hline
+	1.5		                  & 5.8                   & 1			\\
+    \hline
+    \end{tabular}
+\end{center}
+	
+	As can be seen almost immediately in the previous plots, as the frequency of the input signal is increased, the output has less time to reach a steady state value. Moreover, once the time elapsed per input cycle is reduced below the settling time, \textbf{the steady state response of the system is lost, and only the transient response has enough time to be viewable.} \\
+	This occurs because \textbf{why}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\pagebreak
 	\item gain
+	
+	
+	
+	
+	
+	
+	
+	
 	\item simulink 
 	\item PD/PI/PID controller 
 \end{enumerate}
