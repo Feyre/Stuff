@@ -602,6 +602,7 @@ close
   \caption{\label{fig:rand}Servo Motor Response Modified: $k_m$ and $\alpha$}
   \end{figure}
     
+
     \begin{lstlisting}
 % Plot experimental data ye against systems estimated tf y1
 [te_1new,ye_1new] = timing_fix(te_1,ye_1);
@@ -636,7 +637,7 @@ km_max = 500;   % max km value used
 alpha_num = 500;    % number of alpha values used
 alpha_max = 500;    % max alpha value used
 	\end{lstlisting}
-\pagebreak    
+   
     \begin{lstlisting}
 % Preallocate size for speed
 output_ms = zeros(3,km_num*alpha_num);
@@ -1030,7 +1031,6 @@ close
     Recall, for 5\% overshoot, $\zeta = \frac{-\ln(5/100)}{\sqrt[]{\pi^2+\ln^2(5/100)}} = 0.69$\\
     And, the systems estimated overall transfer function; $\frac{k_m\frac{R_f}{R_1}}{s^2 + s\alpha + k_m\frac{R_f}{R_1}}$\\
     Whereas, the general second order transfer function; $\frac{W_n^2}{s^2 + 2\zeta W_n s + W_n^2}$\\
-    
     Moreover, 
     \begin{align*}
 	\alpha &= 2\zeta W_n\\
@@ -1043,7 +1043,6 @@ close
 	\end{align*}
     
     From section B, we know $k_m = 326$ and $\alpha = 38.61$. We also calculated the required $\zeta$ previously, as 0.69. 
-    
     \begin{align*}
     K &= (\frac{38.61}{2*0.69})^2/326\\
     K &= 2.4
