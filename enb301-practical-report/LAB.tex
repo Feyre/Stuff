@@ -230,7 +230,7 @@ Refer to figure~\ref{fig:c1_2_} for the complete closed loop motor control syste
 
 \pagebreak
 \subsection{Experiment D}
-The final experiment, using the same circuit constructed in the previous experiment, examined the response of the system to different input frequencies, the impact of gain on the systems response, and the implementation of a new method to approximate the open and/or closed loop response. 
+The final experiment, using the same circuit constructed in the previous experiment, examined the response of the system to different input frequencies, the impact of gain on the systems response, and the implementation of a new method to approximate the open and/or closed loop response. \\
 %The last pre-lab component requires the familiarization of the complete procedure outlined in section C, 
 
 \textbf{ANALYSIS:}
@@ -1160,15 +1160,23 @@ close
 	\item \textbf{Compare your experimentally derived 5\% overshot gain value against your predicted value. What is the percentage error? If your overshoot was too large for your derived gain value, could you use a controller other than the proportional controller to reduce overshoot? \\\\
 If your steady state error was large, what other controller type could you use to minimize this error? What are  the drawbacks of  this  type of controller? What control applications can you think of that require very low steady state error?}\\
 
-From the procedure outlined in \textbf{experiment C}, an experimental gain of $K = 6.28$ resulted in an overshoot of 5\%, and in \textbf{step 5} it was shown that the theoretical gain required to achieve this was $K = 2.4$. \\
+From the procedure outlined in \textbf{experiment C}, an experimental gain of $K = 6.28$ resulted in an overshoot of 5\%, and in \textbf{step 5} it was shown that the theoretical gain required to achieve this was $K = 2.4$.
 
-Percentage error = blah \\
+The percentage error between the calculated and experimentally found gain values has been calculated below.
+\begin{align*}
+\%_{error} &= |\frac{K_{theoretical} - K_{experimental}}{K_{experimental}}| \times 100 \\
+\%_{error} &= |\frac{6.28 - 2.4}{2.4}| \times 100 \\
+\%_{error} &= 61.8\% 
+\end{align*}
+A large \% error value, as indicated above; provides strong evidence for model inaccuracies. The difference in gain between the theoretical and the practical values is likely caused by \textbf{WHAT}. 
 
-something \\
+The overshoot resulting from the derived gain value was under 5\%. 
 
-Steady state error \textbf{was} noticeable in the system, likely caused by mechanical losses (gearbox, heat, etc). To alleviate this issue, an PI compensator (integrator) could be used; this is because the controller adds up error over time, and would \textbf{know that it had still not yet reached the desired output}. Whereas, currently; the error signal of the proportional controller \textbf{does what?}.\\
+Steady state error \textbf{was} noticeable in the system, likely caused by mechanical losses (gearbox, heat, etc). To alleviate this issue, an PI compensator (integrator) could be used; this is because the PI controller adds up error over time, and would \textbf{know that it had still not yet reached the desired output}. Whereas, currently; the error signal of the proportional controller \textbf{does what?}.
 
-Drawbacks/application? \\
+However, the drawbacks for a PI controller include, but are not limited too; \textbf{WHAT}.
+
+What control applications require very low SSE? \\
 
 Add the actual OS from prac/theo \\
 
