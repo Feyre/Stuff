@@ -332,21 +332,28 @@ After measuring and recording the systems response, overshoot and settling time,
  
 Refer to section~\ref{sec:d} for the construction of the table. Both the above table, and the systems response (figure~\ref{fig:freqimpact}) show clearly that increasing the frequency has no effect on overshoot, settling time or steady state error. However, after the frequency exceeds a certain limit (\textbf{$1/f < Ts$}) the system does not have enough time to reach a steady state value. Moreover, if the frequency of the input where to continue increasing, eventually the operation amplifier will begin \textbf{decreasing/squishing/droping voltage}. 
 
-The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- frequency should not affect any circuit properties. Additionally, the approximated transfer function of this system does not has no elements that depend on the input frequency, or more simply;
-
+The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- \textbf{frequency should not affect any circuit properties.} Additionally, the approximated transfer function of this system is independent of the input frequency, or more simply;
 \begin{align*}
 G_c(s) &= \frac{\frac{R_f}{R_1}K_m} {s^2 + s\alpha + \frac{R_f}{R_1}K_m}
 \end{align*}
 and recall, 
 \begin{align*}
 W_n &= \sqrt{b} = \sqrt{K_m * \frac{R_f}{R_1}} \\
-\zeta &= \frac{a}{2b} = \frac{a}{2*W_n} = \frac{\alpha}{2*\sqrt{K_m * \frac{R_f}{R_1}}} \\\\
+\zeta &= \frac{a}{2b} = \frac{a}{2*W_n} = \frac{\alpha}{2*\sqrt{K_m * \frac{R_f}{R_1}}}
+\end{align*}
+and
+\begin{align*}
 \%OS &= e^{\frac{-\pi \zeta}{\sqrt{1-\zeta^2}}} * 100 \\
 T_s &= \frac{4}{\zeta W_n}
 \end{align*}
 
+Thus, as neither $W_n$ or $\zeta$ are dependent on frequency, both overshoot and settling time are also independent of frequency. 
+This explains why besides the reduced time available for the signal to settle, no visible changes to these properties were observed as the frequency was increased. 
 
-
+The impact of the systems gain however, was much more noticeable. From figure~\ref{fig:gainimpact}, it can be seen that increasing the gain resulted in an increased overshoot and a decreased settling time. This has been proven more in depth in the associated answers section, but a summary of the calculations can be found below.  \\
+\textbf{SUB IN TO FIND OS and Ts AND SHOW THEY RELY ON GAIN, PROP/invPROP}\\
+\textbf{WHY IS THIS USEFUL - prop controller?}\\
+\textcolor{red}{D4/D5}
 
 
 
