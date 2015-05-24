@@ -1222,13 +1222,13 @@ close
 	\caption{\label{fig:diffamp}Inverting Op-amp System}
 	\end{figure}
     \begin{align*}
-	\frac{V_{m}(s)}{V_{o}(s)} &= \frac{R_2}{R_1}
+	\frac{V_{i}(s)}{V_{d}(s)} &= \frac{R_2}{R_1}
 	\end{align*}\\
 	Note: The polarity on the inverter transfer function has been flipped.
     
     \textbf{Motor:}\\
     \begin{align*}
-	\frac{V_{p}(s)}{V_{m}(s)} &= \frac{K_m}{s(s+\alpha)}
+	\frac{V_{p}(s)}{V_{i}(s)} &= \frac{K_m}{s(s+\alpha)}
 	\end{align*}
 	% \textbf{Motor and pot:}\\
 	% \begin{align*}
@@ -1265,10 +1265,10 @@ close
 \pagebreak
 \textbf{System Transfer Function:}\\
 	\begin{align*}
-	G_{c}(s) &= \frac{V_p(s)}{V_i(s)}\\ 
-	&= \frac{V_i(s)}{V_d(s)}\times\frac{V_d(s)}{V_{in}(s))}\\
+	G_{c}(s) &= \frac{V_p(s)}{V_{in}(s)}\\ 
+	&= \frac{V_p(s)}{V_i(s)}\times\frac{V_i(s)}{V_d(s)}\times\frac{V_d(s)}{V_{in}(s))}\\
 	&= \frac{K_m}{s(s+\alpha)}\times\frac{R_2}{R_1}\times(V_i(s)-V_p(s))\\
-	&=\frac{-K_m R_2}{R_1}\bigg(\frac{Vi(s)-V_p(s)}{s(s+\alpha)}\bigg)
+	&=\frac{-K_m R_2}{R_1}\bigg(\frac{V_i(s)-V_p(s)}{s(s+\alpha)}\bigg)
 	\end{align*}
 From Inverting OP amp: $V_m(s) = \frac{R_2}{R_2}\times V_o(s)$\\\\
 From Motor: $V_m(s) = \frac{s(s+\alpha)V_p(s)}{K_m}$
@@ -1284,7 +1284,7 @@ From Difference Op Amp: $V_o(s) = V_i(s) - V_p(s)$
 	&= \frac{1}{1+\frac{R_1}{K_mR_2}(s^2+\alpha s)}\\\\
 	&= \frac{1}{(\frac{R_1}{K_mR_2})s^2(\frac{\alpha R_1}{K_mR_2})s+1}\\\\
 	&= \frac{\frac{K_m R_2}{R_1}}{s^2+(\frac{\alpha R_1 K_m R_2}{K_m R_2 R_1})s+\frac{K_m R_2}{R_1}}\\\\
-	&= \frac{\frac{K_m R_2}{R_1}}{s^2+\alpha R_1 K_m R_2s+\frac{K_m R_2}{R_1}}
+	&= \frac{\frac{K_m R_2}{R_1}}{s^2+\alpha s+\frac{K_m R_2}{R_1}}
 	\end{align*}	  
 
 \pagebreak
