@@ -1142,12 +1142,18 @@ close
 		\end{subfigure} 
 	\caption{\label{fig:rand}Servo Motor Closed Response}
 	\end{figure}
-
-	The motor response of the theoretical response was derived from $R_f = 25k$ ohms and $R_1 = 10k$ ohms with a calculated overshoot of 5\%. As shown in the figure below, the practical overshoot of this design was considerably less.
+	
 	\begin{center}
-		$\%OS = \frac{V_{max} - V_{max}}{V_{avg}}$
-		$=\frac{403.261 - 400.296}{}$
+		$\%OS = \frac{V_{max} - V_{max}}{V_{avg}} \times 100$
 	\end{center}
+	\begin{align*}		
+	    \%OS_{theoretical} &= \frac{403.261 - 400.296}{400.296} \times 100 \\
+	    &= 0.7407\% \\\\
+	    \%OS_{experimental} &= \frac{522.863 - 497.888}{497.888} \times 100 \\
+	    &= 5.016\% 
+	\end{align*}
+
+	The motor response of the theoretical response was derived from $R_f = 25k$ ohms and $R_1 = 10k$ ohms with a calculated overshoot of 5\%. As shown in the calculations above, the theoretical percentage overshoot is much smaller.
 
     
 
