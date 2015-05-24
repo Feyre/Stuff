@@ -195,7 +195,7 @@ In an attempt to better show the procedures of this particular experiment, the r
 
 \textbf{SETUP:}
 \begin{enumerate}
-  \item The the dual power supply was setup in independent mode, with 5.0 V and 2.0 V respectively. (measured using a multimeter to ensure accuracy)
+  \item The dual power supply was setup in independent mode, with 5.0 V and 2.0 V respectively. (measured using a multimeter to ensure accuracy)
   \item Next, the 5V supply was connected across the potentiometer (outer wires), whilst using a multimeter to measure the wiper voltage (middle wire). Moreover, turning the flywheel clockwise increased the wiper voltage; however, if the inverse was true, the 5V and 0V wires would have been swapped.
   \item After having adjusted the flywheel to the center position, and after connecting the 0V rail to one side of the motor; the circuit was briefly connected using the 2V supply. The polarity of the two connections were then adjusted to ensure the motor moves in a clockwise direction when voltage is applied. 
   \item The flywheel was returned to the central location whilst the wiper voltage of the potentiometer and the positive terminal of the motor were measured using the digital CRO. The trigger was set to 0.5 V and a USB inserted. 
@@ -209,7 +209,7 @@ In an attempt to better show the procedures of this particular experiment, the r
   \item The experimental data was also plotted against the systems estimated transfer function $y_1(t)$. 
   \item Using a robust self constructed function to estimate the system parameters according the experimental data, approximate values for $K_m$ and $\alpha$ were obtained. 
   \item The system transfer function $y_1(t)$ was then adjusted, and another diagram constructed to compare the experimental and calculated systems response.
-  \item Fifth step talks about selecting values for $K_m$ and $\beta$ based on an $\alpha$ value :s
+  \item Lastly, using the second order model for the motor and the previously calculated $\alpha$ value; $K_m$ and $\beta$ were approximated. 
 
 \end{enumerate} 
 
@@ -218,7 +218,7 @@ In an attempt to better show the procedures of this particular experiment, the r
 \subsection{Experiment C}
 Section C utilized the open loop response of the motor that had been measured and approximated in the previous procedures to achieve a closed loop control system for the position of the motor (voltage across the potentiometer). The pre-lab component of experiment C required the extensive analysis of a provided circuit diagram; breaking the system down into functional elements of the control system, calculating individual transfer functions for these elements, and constructing an overall transfer function for the system ($G_c(s)$). As mentioned previously, the procedures followed in this experiment will also be separated into the setup or preparation, and the analysis. 
 
-The pre-lab aspect of this experiment required the operator to be familiar with typical breadboard design strategies, the pin-out of the op-amp used within the experiment, common resistor code colours and the use of noise mitigation capacitors. 
+The pre-lab aspect of this experiment required the operator to be familiar with typical breadboard design strategies, the pin-out of the op-amp used within the experiment, common resistor code colours, and the use of noise mitigation capacitors. 
 
 Refer to figure~\ref{fig:c1_2_} for the complete closed loop motor control system schematic used in the following procedures.\\
 
@@ -320,9 +320,9 @@ C8
 
 \pagebreak
 \subsection{Part D}
-Experiment D explored the effect of input frequency on the closed loop system response, as well as examining the effect of increasing or decreasing the systems gain. \textbf{and bode}\\
+Experiment D explored the effect of input frequency on the closed loop system response, as well as examining the effect of increasing or decreasing the systems gain. \textcolor{red}{and bode}\\
   
-D1/C8 \\
+\textcolor{red}{D1/C8} \\
 
 After measuring and recording the systems response and percentage overshoot for five different input frequencies; the following table was constructed. 
 
