@@ -503,29 +503,23 @@ partialFrac = [x y z];
 % prediced model Y_c. What does this suggest about model derived in part B?
 data = csvread('PartC_Theoretical.csv',2,0);  % Read in Closed loop theoretical data
 tc_1 = data(1:end,1);   % Store tc variable
+%tc_1 = tc_1 + abs(tc_1(1)); % Move te variable to start at zero
 yc_1 = data(1:end,2);   % Store yc variable
 yc_1step = data(1:end,3);   % Store tc step input variable
 
-data = csvread('PartC_Experimental.csv',2,0);  % Read in Closed loop theoretical data
-tc_2 = data(1:end,1);   % Store tc variable
-yc_2 = data(1:end,2);   % Store yc variable
-yc_2step = data(1:end,3);   % Store tc step input variable
+data = csvread('PartC-Experimental.csv',2,0);  % Read in Closed loop theoretical data
+tc_1 = data(1:end,1);   % Store tc variable
+%tc_1 = tc_1 + abs(tc_1(1)); % Move te variable to start at zero
+yc_1 = data(1:end,2);   % Store yc variable
+yc_1step = data(1:end,3);   % Store tc step input variable
 
 figure
 plot(tc_1,yc_1,'k',tc_1,yc_1step,'g')
-title('Closed Loop Theoretical Data Plot')
+title('Closed Loop Theoretical Data Plot [Set 1]')
 xlabel('te (sec)')
 ylabel('ye (voltage)')
-print('-depsc',strcat('figures',filesep,'C_theoretical'));
-close
-
-figure
-plot(tc_2,yc_2,'k',tc_2,yc_2step,'g')
-title('Closed Loop Theoretical Data Plot')
-xlabel('te (sec)')
-ylabel('ye (voltage)')
-print('-depsc',strcat('figures',filesep,'C_experimental'));
-close
+%print('-depsc',strcat('figures',filesep,'B1_dataset1'));
+%close
 
 
 
