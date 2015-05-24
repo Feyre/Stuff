@@ -541,10 +541,215 @@ print('-depsc','a7')
 \pagebreak
 \subsubsection{Declan Gilmour}
 \begin{enumerate}
-	\item
-	\item
-	\item
-	\item
+	\item \textbf{Model the complete servo motor control system using a functional diagram. Label all signals and assumptions made including measurement units.}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{PreDec/A1.png}
+	\caption{\label{fig:rand}Servo Motor Functional Diagram}
+	\end{figure} 
+	A voltage is fed into the motor with a magnitude gain. From here the voltage is converted into rotational movement $\theta_{motor}(s)$ by the motor.
+	This rotational movement alters the displacement of the potentiometer wiper. The potentiometer acts as a sensor to indicate arm displacement in the form of output voltage $V_p(t)$.
+	\item\textbf{Update the servo motor functional diagram and make any necessary changes.}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{PreDec/A2.png}
+	\caption{\label{fig:rand}Updated Servo Motor Functional Diagram}
+	\end{figure}
+	To calculate the two servo motor system characteristics, $\alpha$ and $K_m$ the system response would need to be recorded to a step input. This open loop time response is measured in terms of how the voltage applied to the motor affects the voltage seen at the potentiometer.\\
+	The selection of optimum values of $\alpha$ and $K_m$, wold require the potentiometer voltage to be measured with respect of the input voltage. The modification of the Servo Motor Functional Diagram is needed, incorperating a feedback loop as shown.  
+\pagebreak
+	\item\textbf{Create code to simulate motor shaft angle for various values of $K_m$ and $\alpha$}\\
+	Bellow is the Matlab code used to simulate the motor shaft angle.
+	\begin{lstlisting}
+%% A3 - Simulate motor shaft angle for values of km and alpha
+alpha = 1;
+km = 1;
+t = linspace(0,10,100);
+
+% Build transfer function
+G = tf(km, [1 alpha 0]);    % Set G(s) = km / (s + a)  
+G_0 = step(G,t);    % Set G_0(s) = km / (s * (s + a))
+
+% Plot motor set response
+figure
+plot(t,G_0,'r')
+title('Simulated Step Response')
+xlabel('t (sec)')
+ylabel('Amplitude')
+print('-depsc','A3')
+close
+	\end{lstlisting}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{PreDec/A3.eps}
+	\caption{\label{fig:rand}Updated Servo Motor Functional Diagram}
+	\end{figure}
+\pagebreak
+	\item\textbf{Plot $y_1(t)$ against the servo motor response in ENB301\_TestData and compare.} \\
+	Bellow is the Matlab code used to generate the simulated step response against imported test data.
+	\begin{lstlisting}
+%% A4 - Plot motor unit step response data against simulated response
+load ENB301TestData_2015.mat
+alpha = 1;
+km=1;
+G = tf(km,[1 alpha 0]); 
+G_0 = step(G,t);
+
+figure
+hold on
+plot(t,y1,'b')
+plot(t,G_0,'r')
+title('Simulated Step Response and Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('y1(t): Simulated Step Response','Test Data')
+hold off
+print('-depsc','A4')
+close
+	\end{lstlisting}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{PreDec/A4.eps}
+	\caption{\label{fig:rand}Updated Servo Motor Functional Diagram}
+	\end{figure}
+\pagebreak
+	\item\textbf{What is the steady state response and transient response predominantly determined by?}
+\pagebreak
+	\item\textbf{Change the values of $K_m$ and $\alpha$ for to match the simulated response with the test data.}\\
+	The estimated $K_m$ value is 2.3838 and $\alpha$ 1.8990. Bellow is the Matlab Code to estimate km and alpha variables.
+	\begin{lstlisting}
+%% A6 - Estimate km and alpha variables
+load ENB301TestData_2015
+output = zeros(3,100*100);
+error = 0;
+ii = 1;
+for km = linspace(0,4,100)
+   for alpha = linspace(0,4,100)
+       G = tf(km, [1 alpha 0]);
+       G_0 = step(G,t);
+       
+       % Calculate mean square error
+       for jj = 1 : length(t)
+          error = error + (G_0(jj) - y1(jj))^2;
+       end
+       
+       output(:,ii) = [km;alpha;error];
+       ii = ii + 1;
+       error = 0;
+   end
+end
+
+[~,index] = min(output(3,:));
+km = output(1,index); % Output variable
+alpha = output(2,index);  % Output variable
+
+% Build transfer function
+G = tf(km, [1 alpha 0]);    % Set optimal G(s) = km / (s + a)   
+G_0 = step(G,t);    % Set optimal G_0(s) = km / (s * (s + a))
+
+% Plot step function G_0(s)
+figure
+hold on
+plot(t,G_0,'-b');
+plot(t,y1,'-r');
+title('Estimated Step Response of Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('Estimated Step Response', 'Test Data');
+hold off;
+print('-depsc','A6')
+close
+
+% Output km and alpha
+disp(km)    %2.3838
+disp(alpha) %1.8990
+	\end{lstlisting}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{PreDec/A6.eps}
+	\caption{\label{fig:rand}Estimated $K_m$ and $\alpha$ values}
+	\end{figure}
+\pagebreak
+	\item\textbf{Plot the step response from original signal and a step response from a noisy signal.}\\
+	Bellow is the Matlab Code to plot a step response from both original and noisy signals. $K_m = 2.4242$ and $\alpha = 1.9394$.
+
+	\begin{lstlisting}
+%load ENB301TestData_2015
+% Generate noise
+% Standard: sigma = 5, Decreased: signma = 0.2, Increased: sigma = 20
+sigma = 5; %noise standard deviation
+noise = sigma*randn(size(G_0)); %noise vector
+
+% Create noisy signal
+yn = y1 + noise;
+
+output = zeros(3,100*100);
+error = 0;
+ii = 1;
+for km = linspace(0,4,100)
+   for alpha = linspace(0,4,100)
+       G = tf(km, [1 alpha 0]);
+       G_0 = step(G,t);
+       
+       % Calculate mean square error
+       for jj = 1 : length(t)
+          error = error + (G_0(jj) - yn(jj))^2;
+       end
+       
+       output(:,ii) = [km;alpha;error];
+       ii = ii + 1;
+       error = 0;
+   end
+end
+
+[~,index] = min(output(3,:));
+km = output(1,index); % Output variable
+alpha = output(2,index);  % Output variable
+
+% Build transfer function
+G_noisy = tf(km, [1 alpha 0]);    % Set optimal G(s) = km / (s + a)   
+G_0_noisy = step(G_noisy,t);    % Set optimal G_0(s) = km / (s * (s + a))
+
+% Output km and alpha
+disp(km)    %2.4242
+disp(alpha) %1.9394
+
+% Plot noisy signal vs noisy test data
+figure(2)
+hold on
+plot(t,G_0_noisy, '-r');
+plot(t,G_0,'-b');
+title('Estimated Step Response of Noisy Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('Noisy Step Response', 'Original Step Response');
+hold off
+print('-depsc','A7')
+close
+	\end{lstlisting}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{PreDec/A7.eps}
+	\caption{\label{fig:rand}Original Step Response and Noisy Step Response}
+	\end{figure}
+	For this noisy step response, $K_m = 1.4949$ and $\alpha = 1.1717$. When the noise noise decreases, $K_m$ and $\alpha$ decreases in magnitude. When the noise increases, $K_m$ and $\alpha$ increases in magnitude. The transient response of the system appears to increase as the noise of the system increases.\\\\
+	\textbf{Is this Realistic?}\\\\
+	\textbf{Whare are the source of uncertanty or noise in a real system?}\\
+	Sources of uncertainty or noise in a system can include: control error, electrical noise, external factors such as weather and human error.
+	\begin{figure}[H]	
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{PreDec/A7_IncreasedNoise.eps} 
+		\caption{Increased Noise: $K_m = 0.2828$ and $\alpha = 0.0808$}
+		\label{fig:subim1}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{PreDec/A7_DecreasedNoise.eps}
+		\caption{Decreased Noise: $K_m = 2.6263$ and $\alpha = 2.1010$}
+		\label{fig:subim2}
+		\end{subfigure}
+  \caption{\label{fig:rand}Increased and Decreased noisey Step Response}
+  \end{figure}
+
 \end{enumerate}
 
 
