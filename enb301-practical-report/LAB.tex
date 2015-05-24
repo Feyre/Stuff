@@ -1116,38 +1116,38 @@ close
 \pagebreak    
 	\item \textbf{Import experimental results into MATLAB. Compare your closed loop response data against your predicted model data $Y_c(t)$. Note any differences between the experimental result and the predicted result. What does this suggest about the model derived in part A and B?}
 	\begin{figure}[H]
-
-	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.9\linewidth]{Matlab_Code/Figures/C6_theoretical.eps} 
-	\caption{Theoretical Closed Loop Response}
-	\label{fig:subim1}
-	\end{subfigure}
-	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.9\linewidth]{Matlab_Code/Figures/C6_experimental.eps}
-	\caption{Experimental Closed Loop Response}
-	\label{fig:subim2}
-	\end{subfigure} 
-
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{Matlab_Code/Figures/C6_theoretical.eps} 
+		\caption{Theoretical Closed Loop Response}
+		\label{fig:subim1}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{Matlab_Code/Figures/C6_experimental.eps}
+		\caption{Experimental Closed Loop Response}
+		\label{fig:subim2}
+		\end{subfigure} 
 	\caption{\label{fig:rand}Servo Motor Closed Response}
 	\end{figure}
 
-	% \begin{figure}[H]
+	\begin{figure}[H]
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{Ossilloscope/PartC_Theoretical_Overshoot.png} 
+		\caption{Theoretical Closed Loop Response}
+		\label{fig:subim1}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{Ossilloscope/PartC_Experimental_Overshoot.png}
+		\caption{Experimental Closed Loop Response}
+		\label{fig:subim2}
+		\end{subfigure} 
+	\caption{\label{fig:rand}Servo Motor Closed Response}
+	\end{figure}
 
-	% \begin{subfigure}{0.5\textwidth}
-	% \includegraphics[width=0.9\linewidth]{Matlab_Code/Figures/C6_theoretical_model.eps} 
-	% \caption{Theoretical vs Model Closed Loop Response}
-	% \label{fig:subim1}
-	% \end{subfigure}
-	% \begin{subfigure}{0.5\textwidth}
-	% \includegraphics[width=0.9\linewidth]{Matlab_Code/Figures/C6_experimental_model.eps}
-	% \caption{Experimental vs Model Closed Loop Response}
-	% \label{fig:subim2}
-	% \end{subfigure} 
+	The motor response of the theoretical response was derived from $R_f = 25k$ ohms and $R_1 = 10k$ ohms with a calculated overshoot of 5\%. As shown in the figure below, the practal overshoot of this design was considerably less.
+	\begin{center}$\%OS = \frac{V_{avg} - V_{max}}{V_{avg}}$\end{center}
 
-	% \caption{\label{fig:rand}Servo Motor Closed Response}
-	% \end{figure}
     
-    
+
     \pagebreak
 	\item \textbf{Compare your experimentally derived 5\% overshot gain value against your predicted value. What is the percentage error? If your overshoot was too large for your derived gain value, could you use a controller other than the proportional controller to reduce overshoot? \\\\
 If your steady state error was large, what other controller type could you use to minimize this error? What are  the drawbacks of  this  type of controller? What control applications can you think of that require very low steady state error?}\\

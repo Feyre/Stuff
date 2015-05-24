@@ -533,27 +533,6 @@ legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'C6_experimental'));
 close
 
-[tc_theoretical, yc_theoretical] = timing_fix2(tc_theoretical, yc_theoretical);
-Yc_model1 = step(G_c,tc_theoretical);
-figure
-plot(tc_theoretical,Yc_model1,'k',tc_theoretical,yc_theoretical,'g')
-title('Closed Loop Theoretical Vs Model Data Plot')
-xlabel('tc (sec)')
-ylabel('yc (voltage)')
-legend('Motor Response', 'Step input', 'Location','SouthEast')
-print('-depsc',strcat('figures',filesep,'C6_theoretical_model'));
-close
-
-% Yc_model2 = step(G_c,tc_experimental);
-% figure
-% plot(tc_experimental,Yc_model2,'k',tc_experimental,yc_experimental,'g')
-% title('Closed Loop Experimental vs Model Data Plot')
-% xlabel('tc (sec)')
-% ylabel('yc (voltage)')
-% legend('Motor Response', 'Step input', 'Location','SouthEast')
-% print('-depsc',strcat('figures',filesep,'C6_experimental_model'));
-% close
-
 %% D
 %[mag,phase] = bode( G, imag(jw) )
 %http://stackoverflow.com/questions/22837372/how-to-replace-the-laplace-variable-in-a-transfer-function-with-a-number-value

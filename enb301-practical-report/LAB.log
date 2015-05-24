@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.17)  24 MAY 2015 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.17)  24 MAY 2015 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1032,6 +1032,21 @@ LaTeX Warning: Label `fig:subim2' multiply defined.
 LaTeX Warning: Label `sub@fig:subim2' multiply defined.
 
 
+LaTeX Warning: Label `fig:rand' multiply defined.
+
+
+LaTeX Warning: Label `fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `fig:subim2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subim2' multiply defined.
+
+
 LaTeX Warning: Label `fig:subim2' multiply defined.
 
 
@@ -1899,15 +1914,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1062--1067
 
 [28]
 Package epstopdf Info: Source file: <Matlab_Code/Figures/C6_theoretical.eps>
-(epstopdf)                    date: 2015-05-24 16:07:17
+(epstopdf)                    date: 2015-05-24 17:30:57
 (epstopdf)                    size: 86261 bytes
 (epstopdf)             Output file: <Matlab_Code/Figures/C6_theoretical-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2015-05-24 16:08:47
+(epstopdf)                    date: 2015-05-24 17:32:31
 (epstopdf)                    size: 16529 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Code/Figures/C6_the
 oretical-eps-converted-to.pdf Matlab_Code/Figures/C6_theoretical.eps>
-(epstopdf)             \includegraphics on input line 1121.
+(epstopdf)             \includegraphics on input line 1120.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf, id=796, 486.81876pt x
@@ -1916,18 +1931,18 @@ File: Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Code/Figures/C6_theoretical-eps-converted-to.pd
-f used on input line 1121.
+f used on input line 1120.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 Package epstopdf Info: Source file: <Matlab_Code/Figures/C6_experimental.eps>
-(epstopdf)                    date: 2015-05-24 16:07:18
+(epstopdf)                    date: 2015-05-24 17:30:58
 (epstopdf)                    size: 86240 bytes
 (epstopdf)             Output file: <Matlab_Code/Figures/C6_experimental-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2015-05-24 16:08:48
+(epstopdf)                    date: 2015-05-24 17:32:33
 (epstopdf)                    size: 26794 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Code/Figures/C6_exp
 erimental-eps-converted-to.pdf Matlab_Code/Figures/C6_experimental.eps>
-(epstopdf)             \includegraphics on input line 1126.
+(epstopdf)             \includegraphics on input line 1125.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Code/Figures/C6_experimental-eps-converted-to.pdf, id=797, 486.81876pt 
@@ -1936,15 +1951,37 @@ File: Matlab_Code/Figures/C6_experimental-eps-converted-to.pdf Graphic file (ty
 pe pdf)
  <use Matlab_Code/Figures/C6_experimental-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Code/Figures/C6_experimental-eps-converted-to.p
-df used on input line 1126.
+df used on input line 1125.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1120--1130
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1119--1129
+[]$[]$ $[]$ 
+ []
+
+<Ossilloscope/PartC_Theoretical_Overshoot.png, id=798, 803.0pt x 504.88625pt>
+File: Ossilloscope/PartC_Theoretical_Overshoot.png Graphic file (type png)
+
+<use Ossilloscope/PartC_Theoretical_Overshoot.png>
+Package pdftex.def Info: Ossilloscope/PartC_Theoretical_Overshoot.png used on i
+nput line 1134.
+(pdftex.def)             Requested size: 217.6621pt x 136.85268pt.
+
+<Ossilloscope/PartC_Experimental_Overshoot.png, id=799, 803.0pt x 504.88625pt>
+File: Ossilloscope/PartC_Experimental_Overshoot.png Graphic file (type png)
+
+<use Ossilloscope/PartC_Experimental_Overshoot.png>
+Package pdftex.def Info: Ossilloscope/PartC_Experimental_Overshoot.png used on 
+input line 1139.
+(pdftex.def)             Requested size: 217.6621pt x 136.85268pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1133--1143
 []$[]$ $[]$ 
  []
 
 [29 <./Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf> <./Matlab_Code/
-Figures/C6_experimental-eps-converted-to.pdf>]
+Figures/C6_experimental-eps-converted-to.pdf> <./Ossilloscope/PartC_Theoretical
+_Overshoot.png (PNG copy)> <./Ossilloscope/PartC_Experimental_Overshoot.png (PN
+G copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 1153--1154
 
  []
@@ -2154,10 +2191,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1324.
  ) 
 Here is how much of TeX's memory you used:
- 23062 strings out of 493117
- 416399 string characters out of 6135433
+ 23074 strings out of 493117
+ 416886 string characters out of 6135433
  616518 words of memory out of 5000000
- 25547 multiletter control sequences out of 15000+600000
+ 25555 multiletter control sequences out of 15000+600000
  17957 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,10n,92p,1076b,1831s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2179,10 +2216,10 @@ fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb>
-Output written on LAB.pdf (34 pages, 736688 bytes).
+Output written on LAB.pdf (34 pages, 822617 bytes).
 PDF statistics:
- 993 PDF objects out of 1000 (max. 8388607)
- 858 compressed objects within 9 object streams
- 423 named destinations out of 1000 (max. 500000)
- 15696 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 996 PDF objects out of 1000 (max. 8388607)
+ 859 compressed objects within 9 object streams
+ 424 named destinations out of 1000 (max. 500000)
+ 15706 words of extra memory for PDF output out of 17280 (max. 10000000)
 
