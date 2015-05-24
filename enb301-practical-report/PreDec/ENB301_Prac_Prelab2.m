@@ -1,18 +1,47 @@
 %% ENB301_Prac_Prelab2.m
 % Toy Servo System Response
-% This code is for A3, A4, A6 and A7
 % Use is to model a servo motor output to find alpha and km variables
 % Written by D Gilmour n8871566
 
 clc
 clear all
 close all
-
-%load scope_0
-
 %% A3 - Simulate motor shaft angle for values of km and alpha
+alpha = 1;
+km = 1;
+t = linspace(0,10,100);
 
-%% A4 - Plot Ideal y1 and model y0
+% Build transfer function
+G = tf(km, [1 alpha 0]);    % Set G(s) = km / (s + a)  
+G_0 = step(G,t);    % Set G_0(s) = km / (s * (s + a))
+
+% Plot motor set response
+figure
+plot(t,G_0,'r')
+title('Simulated Step Response')
+xlabel('t (sec)')
+ylabel('Amplitude')
+print('-depsc','A3')
+close
+
+%% A4 - Plot motor unit step response data against simulated response
+load ENB301TestData_2015.mat
+alpha = 1;
+km=1;
+G = tf(km,[1 alpha 0]); 
+G_0 = step(G,t);
+
+figure
+hold on
+plot(t,y1,'b')
+plot(t,G_0,'r')
+title('Simulated Step Response and Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('y1(t): Simulated Step Response','Test Data')
+hold off
+print('-depsc','A4')
+close
 
 %% A5 - What is the steady state and steady state response predominantly determined by?
 
@@ -38,52 +67,81 @@ for km = linspace(0,4,100)
    end
 end
 
-[~,ind] = min(output(3,:));
-km = output(1,ind); % Output variable
-alpha = output(2,ind);  % Output variable
+[~,index] = min(output(3,:));
+km = output(1,index); % Output variable
+alpha = output(2,index);  % Output variable
 
 % Build transfer function
 G = tf(km, [1 alpha 0]);    % Set optimal G(s) = km / (s + a)   
 G_0 = step(G,t);    % Set optimal G_0(s) = km / (s * (s + a))
 
 % Plot step function G_0(s)
-figure(1)
+figure
 hold on
 plot(t,G_0,'-b');
 plot(t,y1,'-r');
-legend('Transfer Function', 'Test Data');
+title('Estimated Step Response of Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('Estimated Step Response', 'Test Data');
 hold off;
+print('-depsc','A6')
+close
 
 % Output km and alpha
-km
-alpha
+disp(km)    %2.3838
+disp(alpha) %1.8990
 
 %% A7 - Add noise to G_0
+%load ENB301TestData_2015
 % Generate noise
-sigma = 0.2; %noise standard deviation of noise
+% Standard: sigma = 5, Decreased: signma = 0.2, Increased: sigma = 20
+sigma = 5; %noise standard deviation
 noise = sigma*randn(size(G_0)); %noise vector
 
 % Create noisy signal
-G_0_noise = G_0 + noise;
+yn = y1 + noise;
 
-% Plot noisy signal vs test data
+output = zeros(3,100*100);
+error = 0;
+ii = 1;
+for km = linspace(0,4,100)
+   for alpha = linspace(0,4,100)
+       G = tf(km, [1 alpha 0]);
+       G_0 = step(G,t);
+       
+       % Calculate mean square error
+       for jj = 1 : length(t)
+          error = error + (G_0(jj) - yn(jj))^2;
+       end
+       
+       output(:,ii) = [km;alpha;error];
+       ii = ii + 1;
+       error = 0;
+   end
+end
+
+[~,index] = min(output(3,:));
+km = output(1,index); % Output variable
+alpha = output(2,index);  % Output variable
+
+% Build transfer function
+G_noisy = tf(km, [1 alpha 0]);    % Set optimal G(s) = km / (s + a)   
+G_0_noisy = step(G_noisy,t);    % Set optimal G_0(s) = km / (s * (s + a))
+
+% Output km and alpha
+disp(km)    %2.4242
+disp(alpha) %1.9394
+
+% Plot noisy signal vs noisy test data
 figure(2)
 hold on
-plot(t,G_0_noise, '-b');
-plot(t,y1,'-r');
-legend('Noisy Transfer Function', 'Test Data');
+plot(t,G_0_noisy, '-r');
+plot(t,G_0,'-b');
+title('Estimated Step Response of Noisy Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('Noisy Step Response', 'Original Step Response');
 hold off
-
-%% B1 - Load collected data
-
-%% B2 - Plot experimental data and y1
-
-%% B3 - Figure of merit
-
-%% B4 - 
-
-%% B5 - 
-
-%% C4 - Calculate expected time response
-
-%% C5 - Calculate theretical gain required for 5% overshoot. Determine requried resistors.
+print('-depsc','A7')
+close
