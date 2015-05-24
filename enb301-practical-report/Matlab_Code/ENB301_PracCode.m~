@@ -11,7 +11,6 @@ data = csvread('PartB_Test1.csv',2,0);
 te_1 = data(1:end,1);
 te_1 = te_1 + abs(te_1(1));
 ye_1 = data(1:end,2);
-%ye_1step = medfilt1(data(1:end,3),50);
 ye_1step = data(1:end,3);
 
 data = csvread('PartB_Test2.csv',2,0);
@@ -27,26 +26,29 @@ ye_3 = data(1:end,2);
 ye_3step = data(1:end,3);
 
 figure
-plot(te_1,ye_1,'k',medfilt1(te_1,50),medfilt1(ye_1step,50),'b')
+plot(te_1,ye_1,'k',te_1,ye_1step,'b')
 title('Experimental Data Plot [Set 1]')
 xlabel('te (sec)')
 ylabel('ye (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'B1_dataset1'));
 close
 
 figure
-plot(te_2,medfilt1(ye_2,50),'k',te_2,medfilt1(ye_2step,50),'b')
+plot(te_2,ye_2,'k',te_2,ye_2step,'b')
 title('Experimental Data Plot [Set 2]')
 xlabel('te (sec)')
 ylabel('ye (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'B1_dataset2'));
 close
 
 figure
-plot(te_3,medfilt1(ye_3,50),'k',te_3,medfilt1(ye_3step,50),'b')
+plot(te_3,ye_3,'k',te_3,ye_3step,'b')
 title('Experimental Data Plot [Set 3]')
 xlabel('te (sec)')
 ylabel('ye (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'B1_dataset3'));
 close
 
@@ -502,26 +504,54 @@ partialFrac = [x y z];
 % Import experimental data into matla. Compare closed loop response with
 % prediced model Y_c. What does this suggest about model derived in part B?
 data = csvread('PartC_Theoretical.csv',2,0);  % Read in Closed loop theoretical data
-tc_1 = data(1:end,1);   % Store tc variable
-%tc_1 = tc_1 + abs(tc_1(1)); % Move te variable to start at zero
-yc_1 = data(1:end,2);   % Store yc variable
-yc_1step = data(1:end,3);   % Store tc step input variable
+tc_theoretical = data(1:end,1);   % Store tc variable
+tc_theoretical = tc_theoretical + abs(tc_theoretical(1));
+yc_theoretical = data(1:end,3);   % Store yc variable
+yc_theoreticalStep = data(1:end,2);   % Store tc step input variable
 
-data = csvread('PartC-Experimental.csv',2,0);  % Read in Closed loop theoretical data
-tc_1 = data(1:end,1);   % Store tc variable
-%tc_1 = tc_1 + abs(tc_1(1)); % Move te variable to start at zero
-yc_1 = data(1:end,2);   % Store yc variable
-yc_1step = data(1:end,3);   % Store tc step input variable
+data = csvread('PartC_Experimental.csv',2,0);  % Read in Closed loop theoretical data
+tc_ = data(1:end,1);   % Store tc variable
+tc_2 = tc_2 + abs(tc_2(1));
+yc_2 = data(1:end,3);   % Store yc variable
+yc_2step = data(1:end,2);   % Store tc step input variable
 
 figure
-plot(tc_1,yc_1,'k',tc_1,yc_1step,'g')
-title('Closed Loop Theoretical Data Plot [Set 1]')
-xlabel('te (sec)')
-ylabel('ye (voltage)')
-%print('-depsc',strcat('figures',filesep,'B1_dataset1'));
-%close
+plot(tc_theoretical,yc_theoretical,'k',tc_theoretical,yc_theoreticalStep,'g')
+title('Closed Loop Theoretical Data Plot')
+xlabel('tc (sec)')
+ylabel('yc (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
+print('-depsc',strcat('figures',filesep,'C6_theoretical'));
+close
 
+figure
+plot(tc_2,yc_2,'k',tc_2,yc_2step,'g')
+title('Closed Loop Experimental Data Plot')
+xlabel('tc (sec)')
+ylabel('yc (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
+print('-depsc',strcat('figures',filesep,'C6_experimental'));
+close
 
+Yc_model1 = step(G_c,tc_1);
+figure
+plot(tc_2,Yc_model1,'k',tc_2,yc_2,'g')
+title('Closed Loop Theoretical Vs Model Data Plot')
+xlabel('tc (sec)')
+ylabel('yc (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
+print('-depsc',strcat('figures',filesep,'C6_theoretical_model'));
+close
+
+Yc_model2 = step(G_c,tc_2);
+figure
+plot(tc_2,Yc_model2,'k',tc_2,yc_2,'g')
+title('Closed Loop Experimental vs Model Data Plot')
+xlabel('tc (sec)')
+ylabel('yc (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
+print('-depsc',strcat('figures',filesep,'C6_experimental_model'));
+close
 
 %% D
 %[mag,phase] = bode( G, imag(jw) )
