@@ -232,7 +232,7 @@ Refer to figure~\ref{fig:c1_2_} for the complete closed loop motor control syste
 
 \textbf{ANALYSIS:}
 \begin{enumerate}
-	\item The collected data was imported into matlab, and compared against the predicted model derived previously in part A and B.
+	\item The collected data was imported into matlab, and compared against the predicted model derived previously in \textbf{part A and B}.
 	\item After which, the experimentally found gain required to produce an overshoot of 5\% was compared against the predicted gain value. 
 	\item Lastly, a discussion took place surrounding the use of alternate methods to derive the open and/or closed loop response for the system using the same equipment.
 \end{enumerate}
@@ -247,7 +247,7 @@ The final experiment, using the same circuit constructed in the previous experim
 \begin{enumerate}
 	\item The closed loop response of the system was estimated \textbf{using the method outlined in the previous procedures}
 	\item The $K_m$ and $\alpha$ values were then compared to \textbf{the method outlined in worksheet}
-	\item Using the same circuit constructed in the previous procedure (system gain set at the experimentally found gain required to produce a 5\% OS) the overshoot \textbf{and settling time} were measured and recorded, for input frequencies of 0.5Hz, 0.75Hz, 1Hz, 1.25Hz and 1.5Hz. 
+	\item Using the same circuit constructed in the previous procedure (system gain set at the experimentally found gain required to produce a 5\% OS) the overshoot was measured and recorded, for input frequencies of 0.5Hz, 0.75Hz, 1Hz, 1.25Hz and 1.5Hz. 
 	\item Additionally, the systems response for each frequency was also recorded and saved in-case of future need.
 	\item The impact of altering the gain was then examined, as the response of the system was recorded twice more; using a new gain value each time.
 	\item The closed loop system was then simulated in Simulink, using the model parameters determined in the previous experiment. A group discussion was raised over the quality of the model, the results of which can be found in section~\ref{sec:d}.
@@ -288,7 +288,7 @@ $$ G_c(s) = \frac{1075.8} {s^2 + 38.61s + 1075.8} $$\\
 
 %\textbf{This is/isnt what we'de expect}\\
 
-After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the correct polarity of the motor, the response of the system was captured and saved by the digital CRO. The closed loop response of this system was measured \textcolor{red}{3} times, this graphical representation of this data has been included below.\\
+After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the correct polarity of the motor, the response of the system was captured and saved by the digital CRO. The closed loop response of this system was measured \textcolor{red}{3} times, and the graphical representation of this data has been included below.\\
 
 \textbf{FIGURES}\\
 
@@ -324,7 +324,7 @@ Experiment D explored the effect of input frequency on the closed loop system re
   
 \textcolor{red}{D1/C8} \\
 
-After measuring and recording the systems response and percentage overshoot for five different input frequencies; the following table was constructed. 
+After measuring and recording the systems response and percentage overshoot for five different input frequencies; the following table was constructed (refer to section~\ref{sec:d} for calculations responsible for the construction of this table). 
 
 \begin{center}
     \begin{tabular}{| c | c |}
@@ -339,7 +339,7 @@ After measuring and recording the systems response and percentage overshoot for 
     \end{tabular}
 \end{center}
  
-Refer to section~\ref{sec:d} for the construction of the table. Both the above table, and the systems response (figure~\ref{fig:freqimpact}) show clearly that increasing the frequency has no effect on overshoot, settling time or steady state error. However, after the frequency exceeds a certain limit (\textbf{$1/f < Ts$}) the system does not have enough time to reach a steady state value. Moreover, if the frequency of the input where to continue increasing, eventually the operation amplifier will begin attenuating the output voltage. 
+Both the above table, and the systems response (figure~\ref{fig:freqimpact}) show clearly that increasing the frequency has no effect on overshoot, settling time, or steady state error. However, after the frequency exceeds a certain limit (\textbf{$1/f < Ts$}) the system does not have enough time to reach a steady state value. Moreover, if the frequency of the input where to continue increasing, eventually the operation amplifier will begin attenuating the output voltage. 
 
 The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- \textbf{frequency should not affect any circuit properties.} Additionally, the approximated transfer function of this system is independent of the input frequency, or more simply;
 \begin{align*}
@@ -359,7 +359,8 @@ T_s &= \frac{4}{\zeta W_n}
 Thus, as neither $W_n$ or $\zeta$ are dependent on frequency, both overshoot and settling time are also independent of frequency. 
 This explains why besides the reduced time available for the signal to settle, no visible changes to these properties were observed as the frequency was increased. 
 
-The impact of the systems gain however, was much more noticeable. From figure~\ref{fig:gainimpact}, it can be seen that increasing the gain resulted in an increased overshoot and a decreased settling time. This has been proven more in depth in the associated answers section, but a summary of the calculations can be found below.  \\
+The impact of the systems gain however, was much more noticeable. From figure~\ref{fig:gainimpact}, it can be seen that increasing the gain resulted in an increased overshoot and a decreased settling time. This has been proven more in depth in the associated answers section, but a summary of the findings can be found below.  \\
+From the previous equations, it can be seen that both $\zeta$ and $W_n$ rely on the gain ($K = R_f/R_1$). Furthermore, this means both the overshoot and settling time rely on the gain factor.
 \textbf{SUB IN TO FIND OS and Ts AND SHOW THEY RELY ON GAIN, PROP/invPROP}\\
 \textbf{WHY IS THIS USEFUL - prop controller?}\\
 \textcolor{red}{D4/D5}
