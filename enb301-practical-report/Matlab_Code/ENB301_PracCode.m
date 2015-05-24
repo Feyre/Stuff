@@ -533,11 +533,14 @@ legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'C6_experimental'));
 close
 
-%% D
+%% D2
+% measure the closed- loop system?s overshoot and settling time for 5 
+% different input frequencies (0.5Hz, 0.75Hz, 1Hz, 1.25Hz and 1.5Hz).
 %[mag,phase] = bode( G, imag(jw) )
 %http://stackoverflow.com/questions/22837372/how-to-replace-the-laplace-variable-in-a-transfer-function-with-a-number-value
-data = csvread('PartC_Theoretical.csv',2,0);  % Read in Closed loop theoretical data
-tc_theoretical = data(1:end,1);   % Store tc variable
-tc_theoretical = tc_theoretical + abs(tc_theoretical(1));
-yc_theoretical = data(1:end,3);   % Store yc variable
-yc_theoreticalStep = data(1:end,2);   % Store tc step input variable
+
+data = csvread('PartC_Theoretical.csv',2,0);  % Read in 0.5Hz
+td_50 = data(1:end,1);   % Store tc variable
+td_50 = tc_theoretical + abs(tc_theoretical(1));
+yd_50 = data(1:end,3);   % Store yc variable
+yd_50 = data(1:end,2);   % Store tc step input variable
