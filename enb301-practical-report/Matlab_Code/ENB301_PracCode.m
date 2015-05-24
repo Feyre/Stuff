@@ -536,3 +536,8 @@ close
 %% D
 %[mag,phase] = bode( G, imag(jw) )
 %http://stackoverflow.com/questions/22837372/how-to-replace-the-laplace-variable-in-a-transfer-function-with-a-number-value
+data = csvread('PartC_Theoretical.csv',2,0);  % Read in Closed loop theoretical data
+tc_theoretical = data(1:end,1);   % Store tc variable
+tc_theoretical = tc_theoretical + abs(tc_theoretical(1));
+yc_theoretical = data(1:end,3);   % Store yc variable
+yc_theoreticalStep = data(1:end,2);   % Store tc step input variable
