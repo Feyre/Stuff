@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.17)  25 MAY 2015 01:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.17)  25 MAY 2015 03:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,6 +1044,33 @@ LaTeX Warning: Label `fig:subim1' multiply defined.
 LaTeX Warning: Label `sub@fig:subim1' multiply defined.
 
 
+LaTeX Warning: Label `fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `fig:diffamp' multiply defined.
+
+
+LaTeX Warning: Label `fig:subim1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:subim1' multiply defined.
+
+
 LaTeX Warning: Label `fig:subim2' multiply defined.
 
 
@@ -1243,88 +1270,93 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 151.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 157--164
+
+ []
+
+[1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
 
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--304
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 [8] <PreLach/A2a.png, id=176, 1312.905pt x 331.2375pt>
 File: PreLach/A2a.png Graphic file (type png)
  <use PreLach/A2a.png>
-Package pdftex.def Info: PreLach/A2a.png used on input line 378.
+Package pdftex.def Info: PreLach/A2a.png used on input line 388.
 (pdftex.def)             Requested size: 386.95894pt x 97.62828pt.
 
 <PreLach/A2b.png, id=178, 1035.87pt x 409.53pt>
 File: PreLach/A2b.png Graphic file (type png)
  <use PreLach/A2b.png>
-Package pdftex.def Info: PreLach/A2b.png used on input line 386.
+Package pdftex.def Info: PreLach/A2b.png used on input line 396.
 (pdftex.def)             Requested size: 386.95894pt x 152.98596pt.
  [9 <./PreLach/A2a.png> <./PreLach/A2b.png>]
 Package epstopdf Info: Source file: <PreLach/a3.eps>
@@ -1335,21 +1367,21 @@ Package epstopdf Info: Source file: <PreLach/a3.eps>
 (epstopdf)                    size: 4620 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreLach/a3-eps-converted-t
 o.pdf PreLach/a3.eps>
-(epstopdf)             \includegraphics on input line 397.
+(epstopdf)             \includegraphics on input line 407.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreLach/a3-eps-converted-to.pdf, id=189, 476.78125pt x 388.45125pt>
 File: PreLach/a3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreLach/a3-eps-converted-to.pdf>
-Package pdftex.def Info: PreLach/a3-eps-converted-to.pdf used on input line 397
+Package pdftex.def Info: PreLach/a3-eps-converted-to.pdf used on input line 407
 .
 (pdftex.def)             Requested size: 386.95894pt x 315.28392pt.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `pcr' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 408.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 418.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1pcr.fd
@@ -1368,14 +1400,14 @@ Package epstopdf Info: Source file: <PreLach/a4.eps>
 (epstopdf)                    size: 5733 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreLach/a4-eps-converted-t
 o.pdf PreLach/a4.eps>
-(epstopdf)             \includegraphics on input line 419.
+(epstopdf)             \includegraphics on input line 429.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreLach/a4-eps-converted-to.pdf, id=211, 476.78125pt x 388.45125pt>
 File: PreLach/a4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreLach/a4-eps-converted-to.pdf>
-Package pdftex.def Info: PreLach/a4-eps-converted-to.pdf used on input line 419
+Package pdftex.def Info: PreLach/a4-eps-converted-to.pdf used on input line 429
 .
 (pdftex.def)             Requested size: 386.95894pt x 315.28392pt.
  [11 <./PreLach/a4-eps-converted-to.pdf>]
@@ -1387,14 +1419,14 @@ Package epstopdf Info: Source file: <PreLach/a6a.eps>
 (epstopdf)                    size: 5697 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreLach/a6a-eps-converted-
 to.pdf PreLach/a6a.eps>
-(epstopdf)             \includegraphics on input line 450.
+(epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreLach/a6a-eps-converted-to.pdf, id=236, 476.78125pt x 388.45125pt>
 File: PreLach/a6a-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreLach/a6a-eps-converted-to.pdf>
-Package pdftex.def Info: PreLach/a6a-eps-converted-to.pdf used on input line 45
+Package pdftex.def Info: PreLach/a6a-eps-converted-to.pdf used on input line 46
 0.
 (pdftex.def)             Requested size: 386.95894pt x 315.28392pt.
 Package epstopdf Info: Source file: <PreLach/a6b.eps>
@@ -1405,24 +1437,24 @@ Package epstopdf Info: Source file: <PreLach/a6b.eps>
 (epstopdf)                    size: 5701 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreLach/a6b-eps-converted-
 to.pdf PreLach/a6b.eps>
-(epstopdf)             \includegraphics on input line 467.
+(epstopdf)             \includegraphics on input line 477.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreLach/a6b-eps-converted-to.pdf, id=237, 476.78125pt x 388.45125pt>
 File: PreLach/a6b-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreLach/a6b-eps-converted-to.pdf>
-Package pdftex.def Info: PreLach/a6b-eps-converted-to.pdf used on input line 46
+Package pdftex.def Info: PreLach/a6b-eps-converted-to.pdf used on input line 47
 7.
 (pdftex.def)             Requested size: 386.95894pt x 315.28392pt.
  [12 <./PreLach/a6a-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OML+pcr on input line 485.
+LaTeX Font Info:    Try loading font information for OML+pcr on input line 495.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlpcr.fd
 File: omlpcr.fd 
 )
 LaTeX Font Info:    Font shape `OML/pcr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 485.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 495.
  [13 <./PreLach/a6b-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <PreLach/a7.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1432,69 +1464,69 @@ Package epstopdf Info: Source file: <PreLach/a7.eps>
 (epstopdf)                    size: 5637 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreLach/a7-eps-converted-t
 o.pdf PreLach/a7.eps>
-(epstopdf)             \includegraphics on input line 514.
+(epstopdf)             \includegraphics on input line 524.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreLach/a7-eps-converted-to.pdf, id=303, 476.78125pt x 388.45125pt>
 File: PreLach/a7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreLach/a7-eps-converted-to.pdf>
-Package pdftex.def Info: PreLach/a7-eps-converted-to.pdf used on input line 514
+Package pdftex.def Info: PreLach/a7-eps-converted-to.pdf used on input line 524
 .
 (pdftex.def)             Requested size: 386.95894pt x 315.28392pt.
  [14 <./PreLach/a7-eps-converted-to.pdf>]
 <PreDec/A1.png, id=326, 1279.78125pt x 315.1775pt>
 File: PreDec/A1.png Graphic file (type png)
  <use PreDec/A1.png>
-Package pdftex.def Info: PreDec/A1.png used on input line 547.
+Package pdftex.def Info: PreDec/A1.png used on input line 557.
 (pdftex.def)             Requested size: 386.95894pt x 95.29941pt.
 
 <PreDec/A2.png, id=327, 1033.8625pt x 349.305pt>
 File: PreDec/A2.png Graphic file (type png)
  <use PreDec/A2.png>
-Package pdftex.def Info: PreDec/A2.png used on input line 555.
+Package pdftex.def Info: PreDec/A2.png used on input line 565.
 (pdftex.def)             Requested size: 386.95894pt x 130.73854pt.
  [15 <./PreDec/A1.png> <./PreDec/A2.png>]
 Package epstopdf Info: Source file: <PreDec/A3.eps>
-(epstopdf)                    date: 2015-05-25 00:01:25
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 17369 bytes
 (epstopdf)             Output file: <PreDec/A3-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-25 00:02:51
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 8998 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreDec/A3-eps-converted-to
 .pdf PreDec/A3.eps>
-(epstopdf)             \includegraphics on input line 584.
+(epstopdf)             \includegraphics on input line 594.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreDec/A3-eps-converted-to.pdf, id=338, 483.8075pt x 395.4775pt>
 File: PreDec/A3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreDec/A3-eps-converted-to.pdf>
-Package pdftex.def Info: PreDec/A3-eps-converted-to.pdf used on input line 584.
+Package pdftex.def Info: PreDec/A3-eps-converted-to.pdf used on input line 594.
 
 (pdftex.def)             Requested size: 386.95894pt x 316.32208pt.
  [16 <./PreDec/A3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <PreDec/A4.eps>
-(epstopdf)                    date: 2015-05-24 23:57:41
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 17890 bytes
 (epstopdf)             Output file: <PreDec/A4-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-25 00:02:53
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 10418 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreDec/A4-eps-converted-to
 .pdf PreDec/A4.eps>
-(epstopdf)             \includegraphics on input line 612.
+(epstopdf)             \includegraphics on input line 622.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreDec/A4-eps-converted-to.pdf, id=371, 483.8075pt x 395.4775pt>
 File: PreDec/A4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreDec/A4-eps-converted-to.pdf>
-Package pdftex.def Info: PreDec/A4-eps-converted-to.pdf used on input line 612.
+Package pdftex.def Info: PreDec/A4-eps-converted-to.pdf used on input line 622.
 
 (pdftex.def)             Requested size: 386.95894pt x 316.32208pt.
  [17 <./PreDec/A4-eps-converted-to.pdf>]
 [18]
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 642.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 652.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -1502,59 +1534,59 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 642.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 652.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 Package epstopdf Info: Source file: <PreDec/A6.eps>
-(epstopdf)                    date: 2015-05-25 01:12:15
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 17866 bytes
 (epstopdf)             Output file: <PreDec/A6-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-25 01:17:00
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 10315 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreDec/A6-eps-converted-to
 .pdf PreDec/A6.eps>
-(epstopdf)             \includegraphics on input line 669.
+(epstopdf)             \includegraphics on input line 679.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreDec/A6-eps-converted-to.pdf, id=411, 483.8075pt x 395.4775pt>
 File: PreDec/A6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreDec/A6-eps-converted-to.pdf>
-Package pdftex.def Info: PreDec/A6-eps-converted-to.pdf used on input line 669.
+Package pdftex.def Info: PreDec/A6-eps-converted-to.pdf used on input line 679.
 
 (pdftex.def)             Requested size: 386.95894pt x 316.32208pt.
  [19] [20 <./PreDec/A6-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <PreDec/A7.eps>
-(epstopdf)                    date: 2015-05-25 01:27:19
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 17583 bytes
 (epstopdf)             Output file: <PreDec/A7-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-25 01:30:23
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 10637 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreDec/A7-eps-converted-to
 .pdf PreDec/A7.eps>
-(epstopdf)             \includegraphics on input line 732.
+(epstopdf)             \includegraphics on input line 742.
 Package epstopdf Info: Output file is already uptodate.
  <PreDec/A7-eps-converted-to.pdf, id=478, 483.8075pt x 395.4775pt>
 File: PreDec/A7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use PreDec/A7-eps-converted-to.pdf>
-Package pdftex.def Info: PreDec/A7-eps-converted-to.pdf used on input line 732.
+Package pdftex.def Info: PreDec/A7-eps-converted-to.pdf used on input line 742.
 
 (pdftex.def)             Requested size: 386.95894pt x 316.32208pt.
  [21]
 Package epstopdf Info: Source file: <PreDec/A7_IncreasedNoise.eps>
-(epstopdf)                    date: 2015-05-25 00:59:13
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 17604 bytes
 (epstopdf)             Output file: <PreDec/A7_IncreasedNoise-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2015-05-25 01:00:58
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 10692 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreDec/A7_IncreasedNoise-e
 ps-converted-to.pdf PreDec/A7_IncreasedNoise.eps>
-(epstopdf)             \includegraphics on input line 741.
+(epstopdf)             \includegraphics on input line 751.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreDec/A7_IncreasedNoise-eps-converted-to.pdf, id=538, 483.8075pt x 395.4775pt
@@ -1562,18 +1594,18 @@ Package epstopdf Info: Output file is already uptodate.
 File: PreDec/A7_IncreasedNoise-eps-converted-to.pdf Graphic file (type pdf)
  <use PreDec/A7_IncreasedNoise-eps-converted-to.pdf>
 Package pdftex.def Info: PreDec/A7_IncreasedNoise-eps-converted-to.pdf used on 
-input line 741.
+input line 751.
 (pdftex.def)             Requested size: 217.6621pt x 177.92099pt.
 Package epstopdf Info: Source file: <PreDec/A7_DecreasedNoise.eps>
-(epstopdf)                    date: 2015-05-25 01:18:30
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 17596 bytes
 (epstopdf)             Output file: <PreDec/A7_DecreasedNoise-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2015-05-25 01:19:25
+(epstopdf)                    date: 2015-05-25 01:40:23
 (epstopdf)                    size: 10643 bytes
 (epstopdf)             Command: <repstopdf --outfile=PreDec/A7_DecreasedNoise-e
 ps-converted-to.pdf PreDec/A7_DecreasedNoise.eps>
-(epstopdf)             \includegraphics on input line 746.
+(epstopdf)             \includegraphics on input line 756.
 Package epstopdf Info: Output file is already uptodate.
 
 <PreDec/A7_DecreasedNoise-eps-converted-to.pdf, id=539, 483.8075pt x 395.4775pt
@@ -1581,20 +1613,20 @@ Package epstopdf Info: Output file is already uptodate.
 File: PreDec/A7_DecreasedNoise-eps-converted-to.pdf Graphic file (type pdf)
  <use PreDec/A7_DecreasedNoise-eps-converted-to.pdf>
 Package pdftex.def Info: PreDec/A7_DecreasedNoise-eps-converted-to.pdf used on 
-input line 746.
+input line 756.
 (pdftex.def)             Requested size: 217.6621pt x 177.92099pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 740--750
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 750--760
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--751
+Underfull \hbox (badness 10000) in paragraph at lines 745--761
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--751
+Underfull \hbox (badness 10000) in paragraph at lines 745--761
 
  []
 
@@ -1609,7 +1641,7 @@ ted-to.pdf>
 (epstopdf)                    size: 21551 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Code/Figures/B1_dat
 aset1-eps-converted-to.pdf Matlab_Code/Figures/B1_dataset1.eps>
-(epstopdf)             \includegraphics on input line 793.
+(epstopdf)             \includegraphics on input line 803.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Code/Figures/B1_dataset1-eps-converted-to.pdf, id=571, 481.8pt x 395.47
@@ -1618,7 +1650,7 @@ File: Matlab_Code/Figures/B1_dataset1-eps-converted-to.pdf Graphic file (type p
 df)
  <use Matlab_Code/Figures/B1_dataset1-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Code/Figures/B1_dataset1-eps-converted-to.pdf u
-sed on input line 793.
+sed on input line 803.
 (pdftex.def)             Requested size: 217.6621pt x 178.66322pt.
 Package epstopdf Info: Source file: <Matlab_Code/Figures/B1_dataset2.eps>
 (epstopdf)                    date: 2015-05-24 15:52:16
@@ -1629,7 +1661,7 @@ ted-to.pdf>
 (epstopdf)                    size: 23327 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Code/Figures/B1_dat
 aset2-eps-converted-to.pdf Matlab_Code/Figures/B1_dataset2.eps>
-(epstopdf)             \includegraphics on input line 798.
+(epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Code/Figures/B1_dataset2-eps-converted-to.pdf, id=572, 481.8pt x 395.47
@@ -1638,10 +1670,10 @@ File: Matlab_Code/Figures/B1_dataset2-eps-converted-to.pdf Graphic file (type p
 df)
  <use Matlab_Code/Figures/B1_dataset2-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Code/Figures/B1_dataset2-eps-converted-to.pdf u
-sed on input line 798.
+sed on input line 808.
 (pdftex.def)             Requested size: 217.6621pt x 178.66322pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 792--802
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 802--812
 []$[]$ $[]$ 
  []
 
@@ -1654,7 +1686,7 @@ ted-to.pdf>
 (epstopdf)                    size: 23095 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Code/Figures/B1_dat
 aset3-eps-converted-to.pdf Matlab_Code/Figures/B1_dataset3.eps>
-(epstopdf)             \includegraphics on input line 804.
+(epstopdf)             \includegraphics on input line 814.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Code/Figures/B1_dataset3-eps-converted-to.pdf, id=573, 481.8pt x 395.47
@@ -1663,7 +1695,7 @@ File: Matlab_Code/Figures/B1_dataset3-eps-converted-to.pdf Graphic file (type p
 df)
  <use Matlab_Code/Figures/B1_dataset3-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Code/Figures/B1_dataset3-eps-converted-to.pdf u
-sed on input line 804.
+sed on input line 814.
 (pdftex.def)             Requested size: 217.6621pt x 178.66322pt.
  [23 <./Matlab_Code/Figures/B1_dataset1-eps-converted-to.pdf> <./Matlab_Code/Fi
 gures/B1_dataset2-eps-converted-to.pdf> <./Matlab_Code/Figures/B1_dataset3-eps-
@@ -1677,7 +1709,7 @@ o.pdf>
 (epstopdf)                    size: 11910 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/B2_dataset1
 -eps-converted-to.pdf Matlab_Figures/B2_dataset1.eps>
-(epstopdf)             \includegraphics on input line 822.
+(epstopdf)             \includegraphics on input line 832.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/B2_dataset1-eps-converted-to.pdf, id=620, 490.83376pt x 395.477
@@ -1685,7 +1717,7 @@ Package epstopdf Info: Output file is already uptodate.
 File: Matlab_Figures/B2_dataset1-eps-converted-to.pdf Graphic file (type pdf)
  <use Matlab_Figures/B2_dataset1-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/B2_dataset1-eps-converted-to.pdf used o
-n input line 822.
+n input line 832.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 Package epstopdf Info: Source file: <Matlab_Figures/B2_dataset2.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1696,7 +1728,7 @@ o.pdf>
 (epstopdf)                    size: 12951 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/B2_dataset2
 -eps-converted-to.pdf Matlab_Figures/B2_dataset2.eps>
-(epstopdf)             \includegraphics on input line 827.
+(epstopdf)             \includegraphics on input line 837.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/B2_dataset2-eps-converted-to.pdf, id=621, 486.81876pt x 395.477
@@ -1704,10 +1736,10 @@ Package epstopdf Info: Output file is already uptodate.
 File: Matlab_Figures/B2_dataset2-eps-converted-to.pdf Graphic file (type pdf)
  <use Matlab_Figures/B2_dataset2-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/B2_dataset2-eps-converted-to.pdf used o
-n input line 827.
+n input line 837.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 821--831
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 831--841
 []$[]$ $[]$ 
  []
 
@@ -1720,7 +1752,7 @@ o.pdf>
 (epstopdf)                    size: 12320 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/B2_dataset3
 -eps-converted-to.pdf Matlab_Figures/B2_dataset3.eps>
-(epstopdf)             \includegraphics on input line 833.
+(epstopdf)             \includegraphics on input line 843.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/B2_dataset3-eps-converted-to.pdf, id=622, 490.83376pt x 395.477
@@ -1728,19 +1760,19 @@ Package epstopdf Info: Output file is already uptodate.
 File: Matlab_Figures/B2_dataset3-eps-converted-to.pdf Graphic file (type pdf)
  <use Matlab_Figures/B2_dataset3-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/B2_dataset3-eps-converted-to.pdf used o
-n input line 833.
+n input line 843.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
  [24 <./Matlab_Figures/B2_dataset1-eps-converted-to.pdf> <./Matlab_Figures/B2_d
 ataset2-eps-converted-to.pdf> <./Matlab_Figures/B2_dataset3-eps-converted-to.pd
 f>] [25]
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 932.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 942.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 932.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 942.
 Package epstopdf Info: Source file: <Matlab_Figures/y1_dataset1_ms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
 (epstopdf)                    size: 44537 bytes
@@ -1750,7 +1782,7 @@ d-to.pdf>
 (epstopdf)                    size: 17574 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y1_dataset1
 _ms-eps-converted-to.pdf Matlab_Figures/y1_dataset1_ms.eps>
-(epstopdf)             \includegraphics on input line 970.
+(epstopdf)             \includegraphics on input line 980.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y1_dataset1_ms-eps-converted-to.pdf, id=742, 490.83376pt x 395.
@@ -1759,7 +1791,7 @@ File: Matlab_Figures/y1_dataset1_ms-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Matlab_Figures/y1_dataset1_ms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y1_dataset1_ms-eps-converted-to.pdf use
-d on input line 970.
+d on input line 980.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 Package epstopdf Info: Source file: <Matlab_Figures/y1_dataset1_rms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1770,7 +1802,7 @@ ed-to.pdf>
 (epstopdf)                    size: 17591 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y1_dataset1
 _rms-eps-converted-to.pdf Matlab_Figures/y1_dataset1_rms.eps>
-(epstopdf)             \includegraphics on input line 975.
+(epstopdf)             \includegraphics on input line 985.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y1_dataset1_rms-eps-converted-to.pdf, id=743, 490.83376pt x 395
@@ -1779,10 +1811,10 @@ File: Matlab_Figures/y1_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Matlab_Figures/y1_dataset1_rms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y1_dataset1_rms-eps-converted-to.pdf us
-ed on input line 975.
+ed on input line 985.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 969--979
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 979--989
 []$[]$ $[]$ 
  []
 
@@ -1795,7 +1827,7 @@ d-to.pdf>
 (epstopdf)                    size: 19460 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y1_dataset2
 _ms-eps-converted-to.pdf Matlab_Figures/y1_dataset2_ms.eps>
-(epstopdf)             \includegraphics on input line 982.
+(epstopdf)             \includegraphics on input line 992.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y1_dataset2_ms-eps-converted-to.pdf, id=744, 486.81876pt x 395.
@@ -1804,7 +1836,7 @@ File: Matlab_Figures/y1_dataset2_ms-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Matlab_Figures/y1_dataset2_ms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y1_dataset2_ms-eps-converted-to.pdf use
-d on input line 982.
+d on input line 992.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 Package epstopdf Info: Source file: <Matlab_Figures/y1_dataset2_rms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1815,7 +1847,7 @@ ed-to.pdf>
 (epstopdf)                    size: 19015 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y1_dataset2
 _rms-eps-converted-to.pdf Matlab_Figures/y1_dataset2_rms.eps>
-(epstopdf)             \includegraphics on input line 987.
+(epstopdf)             \includegraphics on input line 997.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y1_dataset2_rms-eps-converted-to.pdf, id=745, 486.81876pt x 395
@@ -1824,10 +1856,10 @@ File: Matlab_Figures/y1_dataset2_rms-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Matlab_Figures/y1_dataset2_rms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y1_dataset2_rms-eps-converted-to.pdf us
-ed on input line 987.
+ed on input line 997.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 981--991
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 991--1001
 []$[]$ $[]$ 
  []
 
@@ -1840,7 +1872,7 @@ d-to.pdf>
 (epstopdf)                    size: 18972 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y1_dataset3
 _ms-eps-converted-to.pdf Matlab_Figures/y1_dataset3_ms.eps>
-(epstopdf)             \includegraphics on input line 993.
+(epstopdf)             \includegraphics on input line 1003.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y1_dataset3_ms-eps-converted-to.pdf, id=746, 490.83376pt x 395.
@@ -1849,7 +1881,7 @@ File: Matlab_Figures/y1_dataset3_ms-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Matlab_Figures/y1_dataset3_ms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y1_dataset3_ms-eps-converted-to.pdf use
-d on input line 993.
+d on input line 1003.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 Package epstopdf Info: Source file: <Matlab_Figures/y1_dataset3_rms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1860,7 +1892,7 @@ ed-to.pdf>
 (epstopdf)                    size: 19137 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y1_dataset3
 _rms-eps-converted-to.pdf Matlab_Figures/y1_dataset3_rms.eps>
-(epstopdf)             \includegraphics on input line 998.
+(epstopdf)             \includegraphics on input line 1008.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y1_dataset3_rms-eps-converted-to.pdf, id=747, 490.83376pt x 395
@@ -1869,10 +1901,10 @@ File: Matlab_Figures/y1_dataset3_rms-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Matlab_Figures/y1_dataset3_rms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y1_dataset3_rms-eps-converted-to.pdf us
-ed on input line 998.
+ed on input line 1008.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 992--1002
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1002--1012
 []$[]$ $[]$ 
  []
 
@@ -1886,7 +1918,7 @@ d-to.pdf>
 (epstopdf)                    size: 17386 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
 _ms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_ms.eps>
-(epstopdf)             \includegraphics on input line 1012.
+(epstopdf)             \includegraphics on input line 1022.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf, id=787, 490.83376pt x 395.
@@ -1895,7 +1927,7 @@ File: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf use
-d on input line 1012.
+d on input line 1022.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1906,7 +1938,7 @@ ed-to.pdf>
 (epstopdf)                    size: 17395 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
 _rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)             \includegraphics on input line 1017.
+(epstopdf)             \includegraphics on input line 1027.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf, id=788, 490.83376pt x 395
@@ -1915,10 +1947,10 @@ File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
-ed on input line 1017.
+ed on input line 1027.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1011--1021
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1021--1031
 []$[]$ $[]$ 
  []
 
@@ -1931,7 +1963,7 @@ d-to.pdf>
 (epstopdf)                    size: 19601 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset2
 _ms-eps-converted-to.pdf Matlab_Figures/y2_dataset2_ms.eps>
-(epstopdf)             \includegraphics on input line 1023.
+(epstopdf)             \includegraphics on input line 1033.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y2_dataset2_ms-eps-converted-to.pdf, id=789, 486.81876pt x 395.
@@ -1940,7 +1972,7 @@ File: Matlab_Figures/y2_dataset2_ms-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Matlab_Figures/y2_dataset2_ms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset2_ms-eps-converted-to.pdf use
-d on input line 1023.
+d on input line 1033.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset2_rms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1951,7 +1983,7 @@ ed-to.pdf>
 (epstopdf)                    size: 19609 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset2
 _rms-eps-converted-to.pdf Matlab_Figures/y2_dataset2_rms.eps>
-(epstopdf)             \includegraphics on input line 1028.
+(epstopdf)             \includegraphics on input line 1038.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y2_dataset2_rms-eps-converted-to.pdf, id=790, 486.81876pt x 395
@@ -1960,10 +1992,10 @@ File: Matlab_Figures/y2_dataset2_rms-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Matlab_Figures/y2_dataset2_rms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset2_rms-eps-converted-to.pdf us
-ed on input line 1028.
+ed on input line 1038.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1022--1032
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1032--1042
 []$[]$ $[]$ 
  []
 
@@ -1976,7 +2008,7 @@ d-to.pdf>
 (epstopdf)                    size: 19326 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset3
 _ms-eps-converted-to.pdf Matlab_Figures/y2_dataset3_ms.eps>
-(epstopdf)             \includegraphics on input line 1034.
+(epstopdf)             \includegraphics on input line 1044.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y2_dataset3_ms-eps-converted-to.pdf, id=791, 490.83376pt x 395.
@@ -1985,7 +2017,7 @@ File: Matlab_Figures/y2_dataset3_ms-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Matlab_Figures/y2_dataset3_ms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset3_ms-eps-converted-to.pdf use
-d on input line 1034.
+d on input line 1044.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset3_rms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -1996,7 +2028,7 @@ ed-to.pdf>
 (epstopdf)                    size: 19334 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset3
 _rms-eps-converted-to.pdf Matlab_Figures/y2_dataset3_rms.eps>
-(epstopdf)             \includegraphics on input line 1039.
+(epstopdf)             \includegraphics on input line 1049.
 Package epstopdf Info: Output file is already uptodate.
 
 <Matlab_Figures/y2_dataset3_rms-eps-converted-to.pdf, id=792, 490.83376pt x 395
@@ -2005,10 +2037,10 @@ File: Matlab_Figures/y2_dataset3_rms-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Matlab_Figures/y2_dataset3_rms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset3_rms-eps-converted-to.pdf us
-ed on input line 1039.
+ed on input line 1049.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1033--1043
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1043--1053
 []$[]$ $[]$ 
  []
 
@@ -2021,72 +2053,93 @@ ps-converted-to.pdf>] [28 <./Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf
 dataset2_ms-eps-converted-to.pdf> <./Matlab_Figures/y2_dataset2_rms-eps-convert
 ed-to.pdf> <./Matlab_Figures/y2_dataset3_ms-eps-converted-to.pdf> <./Matlab_Fig
 ures/y2_dataset3_rms-eps-converted-to.pdf>] [29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1156--1157
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1167
 
  []
 
 <FigsC/c1_2_.png, id=998, 484.05844pt x 255.20343pt>
 File: FigsC/c1_2_.png Graphic file (type png)
  <use FigsC/c1_2_.png>
-Package pdftex.def Info: FigsC/c1_2_.png used on input line 1160.
+Package pdftex.def Info: FigsC/c1_2_.png used on input line 1170.
 (pdftex.def)             Requested size: 386.95894pt x 204.01894pt.
 
 <FigsC/c1.png, id=999, 1294.8375pt x 775.39688pt>
 File: FigsC/c1.png Graphic file (type png)
  <use FigsC/c1.png>
-Package pdftex.def Info: FigsC/c1.png used on input line 1166.
+Package pdftex.def Info: FigsC/c1.png used on input line 1176.
 (pdftex.def)             Requested size: 386.95894pt x 231.72165pt.
  [31 <./FigsC/c1_2_.png> <./FigsC/c1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1176
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
 
  []
 
-<FigsC/c2b.png, id=1009, 328.97906pt x 175.40532pt>
+<FigsC/differenceOpAmp.png, id=1009, 113.51309pt x 75.6754pt>
+File: FigsC/differenceOpAmp.png Graphic file (type png)
+
+<use FigsC/differenceOpAmp.png>
+Package pdftex.def Info: FigsC/differenceOpAmp.png used on input line 1191.
+(pdftex.def)             Requested size: 193.47577pt x 128.99748pt.
+
+<FigsC/c2b.png, id=1010, 328.97906pt x 175.40532pt>
 File: FigsC/c2b.png Graphic file (type png)
  <use FigsC/c2b.png>
-Package pdftex.def Info: FigsC/c2b.png used on input line 1180.
-(pdftex.def)             Requested size: 193.47577pt x 103.15903pt.
+Package pdftex.def Info: FigsC/c2b.png used on input line 1196.
+(pdftex.def)             Requested size: 241.84842pt x 128.95212pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1177--1182
+Underfull \hbox (badness 10000) in paragraph at lines 1187--1201
 
  []
 
-<FigsC/c2a.png, id=1010, 197.23688pt x 175.40532pt>
+<FigsC/invertingOpAmp.png, id=1011, 113.51309pt x 66.21597pt>
+File: FigsC/invertingOpAmp.png Graphic file (type png)
+
+<use FigsC/invertingOpAmp.png>
+Package pdftex.def Info: FigsC/invertingOpAmp.png used on input line 1212.
+(pdftex.def)             Requested size: 193.47577pt x 112.8728pt.
+
+<FigsC/c2a.png, id=1012, 197.23688pt x 175.40532pt>
 File: FigsC/c2a.png Graphic file (type png)
  <use FigsC/c2a.png>
-Package pdftex.def Info: FigsC/c2a.png used on input line 1191.
-(pdftex.def)             Requested size: 145.11052pt x 129.04848pt.
+Package pdftex.def Info: FigsC/c2a.png used on input line 1217.
+(pdftex.def)             Requested size: 193.47577pt x 172.06197pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1188--1193
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1199--1200
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
 
  []
 
-[32 <./FigsC/c2b.png> <./FigsC/c2a.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1210--1211
+[32 <./FigsC/differenceOpAmp.png> <./FigsC/c2b.png> <./FigsC/invertingOpAmp.png
+> <./FigsC/c2a.png>] <FigsC/c2c.png, id=1022, 1043.9pt x 299.1175pt>
+File: FigsC/c2c.png Graphic file (type png)
+
+<use FigsC/c2c.png>
+Package pdftex.def Info: FigsC/c2c.png used on input line 1239.
+(pdftex.def)             Requested size: 386.95894pt x 110.87712pt.
+ [33 <./FigsC/c2c.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1265--1266
 
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 1224--1225
+
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1274
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1266--1271
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1291
 
  []
 
 [35]
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1337
+
+ []
+
+[36]
 Package epstopdf Info: Source file: <Matlab_Code/Figures/C6_theoretical.eps>
 (epstopdf)                    date: 2015-05-24 17:30:57
 (epstopdf)                    size: 86261 bytes
@@ -2096,16 +2149,16 @@ verted-to.pdf>
 (epstopdf)                    size: 16529 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Code/Figures/C6_the
 oretical-eps-converted-to.pdf Matlab_Code/Figures/C6_theoretical.eps>
-(epstopdf)             \includegraphics on input line 1324.
+(epstopdf)             \includegraphics on input line 1390.
 Package epstopdf Info: Output file is already uptodate.
 
-<Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf, id=1033, 486.81876pt 
+<Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf, id=1044, 486.81876pt 
 x 395.4775pt>
 File: Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Code/Figures/C6_theoretical-eps-converted-to.pd
-f used on input line 1324.
+f used on input line 1390.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 Package epstopdf Info: Source file: <Matlab_Code/Figures/C6_experimental.eps>
 (epstopdf)                    date: 2015-05-24 17:30:58
@@ -2116,184 +2169,71 @@ nverted-to.pdf>
 (epstopdf)                    size: 26794 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Code/Figures/C6_exp
 erimental-eps-converted-to.pdf Matlab_Code/Figures/C6_experimental.eps>
-(epstopdf)             \includegraphics on input line 1329.
+(epstopdf)             \includegraphics on input line 1395.
 Package epstopdf Info: Output file is already uptodate.
 
-<Matlab_Code/Figures/C6_experimental-eps-converted-to.pdf, id=1034, 486.81876pt
+<Matlab_Code/Figures/C6_experimental-eps-converted-to.pdf, id=1045, 486.81876pt
  x 395.4775pt>
 File: Matlab_Code/Figures/C6_experimental-eps-converted-to.pdf Graphic file (ty
 pe pdf)
  <use Matlab_Code/Figures/C6_experimental-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Code/Figures/C6_experimental-eps-converted-to.p
-df used on input line 1329.
+df used on input line 1395.
 (pdftex.def)             Requested size: 217.6621pt x 176.82271pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1323--1333
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1389--1399
 []$[]$ $[]$ 
  []
 
 
-<Ossilloscope/PartC_Theoretical_Overshoot.png, id=1035, 803.0pt x 504.88625pt>
+<Ossilloscope/PartC_Theoretical_Overshoot.png, id=1046, 803.0pt x 504.88625pt>
 File: Ossilloscope/PartC_Theoretical_Overshoot.png Graphic file (type png)
 
 <use Ossilloscope/PartC_Theoretical_Overshoot.png>
 Package pdftex.def Info: Ossilloscope/PartC_Theoretical_Overshoot.png used on i
-nput line 1338.
+nput line 1404.
 (pdftex.def)             Requested size: 217.6621pt x 136.85268pt.
 
-<Ossilloscope/PartC_Experimental_Overshoot.png, id=1036, 803.0pt x 504.88625pt>
+<Ossilloscope/PartC_Experimental_Overshoot.png, id=1047, 803.0pt x 504.88625pt>
 File: Ossilloscope/PartC_Experimental_Overshoot.png Graphic file (type png)
 <use Ossilloscope/PartC_Experimental_Overshoot.png>
 Package pdftex.def Info: Ossilloscope/PartC_Experimental_Overshoot.png used on 
-input line 1343.
+input line 1409.
 (pdftex.def)             Requested size: 217.6621pt x 136.85268pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1337--1347
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1403--1413
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1360--1361
+Underfull \hbox (badness 10000) in paragraph at lines 1426--1427
 
  []
 
-[36 <./Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf> <./Matlab_Code/
+[37 <./Matlab_Code/Figures/C6_theoretical-eps-converted-to.pdf> <./Matlab_Code/
 Figures/C6_experimental-eps-converted-to.pdf> <./Ossilloscope/PartC_Theoretical
 _Overshoot.png (PNG copy)> <./Ossilloscope/PartC_Experimental_Overshoot.png (PN
 G copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 1366--1367
+Underfull \hbox (badness 10000) in paragraph at lines 1432--1433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1366--1367
+Underfull \hbox (badness 10000) in paragraph at lines 1432--1433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1385
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1386--1387
-
- []
-
-[37]
-Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_ms.eps>
-(epstopdf)                    date: 2015-05-22 10:30:38
-(epstopdf)                    size: 44540 bytes
-(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_ms-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2015-05-22 20:44:45
-(epstopdf)                    size: 17386 bytes
-(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
-_ms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_ms.eps>
-(epstopdf)             \includegraphics on input line 1420.
-Package epstopdf Info: Output file is already uptodate.
-File: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf Graphic file (type pdf
-)
- <use Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf>
-Package pdftex.def Info: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf use
-d on input line 1420.
-(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
-Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)                    date: 2015-05-22 10:30:38
-(epstopdf)                    size: 44544 bytes
-(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2015-05-22 20:44:47
-(epstopdf)                    size: 17395 bytes
-(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
-_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)             \includegraphics on input line 1425.
-Package epstopdf Info: Output file is already uptodate.
-File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
-f)
-
-<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
-Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
-ed on input line 1425.
-(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1419--1429
-[]$[]$ $[]$ 
- []
-
-Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)                    date: 2015-05-22 10:30:38
-(epstopdf)                    size: 44544 bytes
-(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2015-05-22 20:44:47
-(epstopdf)                    size: 17395 bytes
-(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
-_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)             \includegraphics on input line 1431.
-Package epstopdf Info: Output file is already uptodate.
-File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
-f)
-<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
-Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
-ed on input line 1431.
-(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
-Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)                    date: 2015-05-22 10:30:38
-(epstopdf)                    size: 44544 bytes
-(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2015-05-22 20:44:47
-(epstopdf)                    size: 17395 bytes
-(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
-_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)             \includegraphics on input line 1436.
-Package epstopdf Info: Output file is already uptodate.
-File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
-f)
-
-<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
-Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
-ed on input line 1436.
-(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1430--1440
-[]$[]$ $[]$ 
- []
-
-Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)                    date: 2015-05-22 10:30:38
-(epstopdf)                    size: 44544 bytes
-(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2015-05-22 20:44:47
-(epstopdf)                    size: 17395 bytes
-(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
-_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)             \includegraphics on input line 1442.
-Package epstopdf Info: Output file is already uptodate.
-File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
-f)
-<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
-Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
-ed on input line 1442.
-(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
- [38]
 Underfull \hbox (badness 10000) in paragraph at lines 1450--1451
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1475--1476
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1453
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1477--1480
-
- []
-
-[39]
+[38]
 Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_ms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
 (epstopdf)                    size: 44540 bytes
@@ -2303,13 +2243,13 @@ d-to.pdf>
 (epstopdf)                    size: 17386 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
 _ms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_ms.eps>
-(epstopdf)             \includegraphics on input line 1500.
+(epstopdf)             \includegraphics on input line 1486.
 Package epstopdf Info: Output file is already uptodate.
 File: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf Graphic file (type pdf
 )
  <use Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf use
-d on input line 1500.
+d on input line 1486.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
 (epstopdf)                    date: 2015-05-22 10:30:38
@@ -2320,26 +2260,134 @@ ed-to.pdf>
 (epstopdf)                    size: 17395 bytes
 (epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
 _rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
-(epstopdf)             \includegraphics on input line 1505.
+(epstopdf)             \includegraphics on input line 1491.
 Package epstopdf Info: Output file is already uptodate.
 File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
 f)
 
 <use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
 Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
-ed on input line 1505.
+ed on input line 1491.
 (pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1499--1509
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1485--1495
 []$[]$ $[]$ 
  []
 
-[40] [41]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1597.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1597.
+Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)                    date: 2015-05-22 10:30:38
+(epstopdf)                    size: 44544 bytes
+(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2015-05-22 20:44:47
+(epstopdf)                    size: 17395 bytes
+(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
+_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)             \includegraphics on input line 1497.
+Package epstopdf Info: Output file is already uptodate.
+File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
+f)
+<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
+Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
+ed on input line 1497.
+(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
+Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)                    date: 2015-05-22 10:30:38
+(epstopdf)                    size: 44544 bytes
+(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2015-05-22 20:44:47
+(epstopdf)                    size: 17395 bytes
+(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
+_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)             \includegraphics on input line 1502.
+Package epstopdf Info: Output file is already uptodate.
+File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
+f)
+
+<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
+Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
+ed on input line 1502.
+(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1496--1506
+[]$[]$ $[]$ 
+ []
+
+Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)                    date: 2015-05-22 10:30:38
+(epstopdf)                    size: 44544 bytes
+(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2015-05-22 20:44:47
+(epstopdf)                    size: 17395 bytes
+(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
+_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)             \includegraphics on input line 1508.
+Package epstopdf Info: Output file is already uptodate.
+File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
+f)
+<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
+Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
+ed on input line 1508.
+(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
+ [39]
+Underfull \hbox (badness 10000) in paragraph at lines 1541--1543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1544--1545
+
+ []
+
+[40]
+Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_ms.eps>
+(epstopdf)                    date: 2015-05-22 10:30:38
+(epstopdf)                    size: 44540 bytes
+(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_ms-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2015-05-22 20:44:45
+(epstopdf)                    size: 17386 bytes
+(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
+_ms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_ms.eps>
+(epstopdf)             \includegraphics on input line 1562.
+Package epstopdf Info: Output file is already uptodate.
+File: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf>
+Package pdftex.def Info: Matlab_Figures/y2_dataset1_ms-eps-converted-to.pdf use
+d on input line 1562.
+(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
+Package epstopdf Info: Source file: <Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)                    date: 2015-05-22 10:30:38
+(epstopdf)                    size: 44544 bytes
+(epstopdf)             Output file: <Matlab_Figures/y2_dataset1_rms-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2015-05-22 20:44:47
+(epstopdf)                    size: 17395 bytes
+(epstopdf)             Command: <repstopdf --outfile=Matlab_Figures/y2_dataset1
+_rms-eps-converted-to.pdf Matlab_Figures/y2_dataset1_rms.eps>
+(epstopdf)             \includegraphics on input line 1567.
+Package epstopdf Info: Output file is already uptodate.
+File: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf Graphic file (type pd
+f)
+
+<use Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf>
+Package pdftex.def Info: Matlab_Figures/y2_dataset1_rms-eps-converted-to.pdf us
+ed on input line 1567.
+(pdftex.def)             Requested size: 217.6621pt x 175.37442pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1561--1571
+[]$[]$ $[]$ 
+ []
+
+[41] [42]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1659.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1659.
  (./LAB.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1597.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1597.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1659.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1659.
 
 Package rerunfilecheck Info: File `LAB.out' has not changed.
 (rerunfilecheck)             Checksum: B7266D66A31FE2C6A7CCE33E671C60A5;1197.
@@ -2347,16 +2395,16 @@ Package rerunfilecheck Info: File `LAB.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1597.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1659.
  ) 
 Here is how much of TeX's memory you used:
- 23361 strings out of 493117
- 421422 string characters out of 6135433
- 617250 words of memory out of 5000000
- 25630 multiletter control sequences out of 15000+600000
+ 23375 strings out of 493117
+ 421770 string characters out of 6135433
+ 617249 words of memory out of 5000000
+ 25642 multiletter control sequences out of 15000+600000
  20229 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,92p,1076b,1831s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,92p,1076b,1831s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
@@ -2374,12 +2422,13 @@ ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist
 fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
-w/times/utmr8a.pfb>
-Output written on LAB.pdf (41 pages, 980882 bytes).
+type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb>
+Output written on LAB.pdf (42 pages, 1039767 bytes).
 PDF statistics:
- 1314 PDF objects out of 1440 (max. 8388607)
- 1144 compressed objects within 12 object streams
- 613 named destinations out of 1000 (max. 500000)
- 16770 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 1324 PDF objects out of 1440 (max. 8388607)
+ 1146 compressed objects within 12 object streams
+ 612 named destinations out of 1000 (max. 500000)
+ 16785 words of extra memory for PDF output out of 17280 (max. 10000000)
 

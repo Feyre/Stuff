@@ -150,7 +150,17 @@
 \maketitle
 
 \section{Executive Summary:}
-\textbf{1/2 paragraph overview of the document}
+This report provides the documentation and analysis of three closely associated practical experiments; the open loop system, the closed loop motor control system, and the effects of varying the systems gain and input signal frequency. 
+The methods of analysis conducted within this document include thorough mathematical estimations and computational simulations.
+The results of the previously mentioned experiments, beyond showing clearly the benefits and application of closed loop control systems, conclusively show that the input frequency does not effect the overshoot or settling time of the closed loop system, but the gain is proportional these properties. Moreover, the difference in theoretical calculations and practical applications due to un-modeled system interactions was shown in depth.  
+
+\textcolor{red}{Still not really done}\\
+subject matter\\
+methods\\
+findings\\
+conclusions\\
+recommendations\\
+limitations\\
 
 \section{Aim:}
 \textbf{1-2 sentences on the report purpose}\\
@@ -274,9 +284,9 @@ As mentioned previously, the goal of experiment C was to construct a closed loop
 The pre-experimental aspect of this section required the breakdown and analysis of the circuit diagram captured in figure~\ref{fig:c1_2_}, the full method and calculations has been provided in section~\ref{sec:c}; the in depth analysis resulted in an estimated overall transfer function for the system. 
 
 $$ G_c(s) = \frac{\frac{R_f}{R_1}K_m} {s^2 + s\alpha + \frac{R_f}{R_1}K_m} $$
-$$ G_c(s) = \frac{1075.8} {s^2 + 38.61s + 1075.8} $$
+$$ G_c(s) = \frac{1075.8} {s^2 + 38.61s + 1075.8} $$\\
 
-\textbf{This is/isnt what we'de expect}\\
+%\textbf{This is/isnt what we'de expect}\\
 
 After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the correct polarity of the motor, the response of the system was captured and saved by the digital CRO. The closed loop response of this system was measured \textcolor{red}{3} times, this graphical representation of this data has been included below.\\
 
@@ -314,22 +324,22 @@ Experiment D explored the effect of input frequency on the closed loop system re
   
 D1/C8 \\
 
-After measuring and recording the systems response, overshoot and settling time, for five different input frequencies; the following table was constructed. 
+After measuring and recording the systems response and percentage overshoot for five different input frequencies; the following table was constructed. 
 
 \begin{center}
-    \begin{tabular}{| c | c | c |}
+    \begin{tabular}{| c | c |}
     \hline
-    Input Frequency (Hz)  & Overshoot (\%)    & Settling time (s) 	\\ \hline
-    0.5  	                  & 6.1                   & 1 			\\ \hline
-	0.75  	                  & 5.7                   & -1 			\\ \hline
-	1		                  & 6.1                   & 1			\\ \hline
-	1.25	                  & 6.5                   & 1			\\ \hline
-	1.5		                  & 5.8                   & 1			\\
+    Input Frequency (Hz)  & Overshoot (\%)  \\ \hline
+    0.5  	                  & 6.1  		\\ \hline
+	0.75  	                  & 5.7  		\\ \hline
+	1		                  & 6.1 		\\ \hline
+	1.25	                  & 6.5 		\\ \hline
+	1.5		                  & 5.8 		\\
     \hline
     \end{tabular}
 \end{center}
  
-Refer to section~\ref{sec:d} for the construction of the table. Both the above table, and the systems response (figure~\ref{fig:freqimpact}) show clearly that increasing the frequency has no effect on overshoot, settling time or steady state error. However, after the frequency exceeds a certain limit (\textbf{$1/f < Ts$}) the system does not have enough time to reach a steady state value. Moreover, if the frequency of the input where to continue increasing, eventually the operation amplifier will begin \textbf{decreasing/squishing/droping voltage}. 
+Refer to section~\ref{sec:d} for the construction of the table. Both the above table, and the systems response (figure~\ref{fig:freqimpact}) show clearly that increasing the frequency has no effect on overshoot, settling time or steady state error. However, after the frequency exceeds a certain limit (\textbf{$1/f < Ts$}) the system does not have enough time to reach a steady state value. Moreover, if the frequency of the input where to continue increasing, eventually the operation amplifier will begin attenuating the output voltage. 
 
 The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- \textbf{frequency should not affect any circuit properties.} Additionally, the approximated transfer function of this system is independent of the input frequency, or more simply;
 \begin{align*}
@@ -1176,52 +1186,108 @@ close
     
     \textbf{Difference Op-amp:}\\
     \begin{figure}[H]
-	\centering
-	\includegraphics[width=.4\textwidth]{FigsC/c2b.png}
+    \centering
+		\begin{subfigure}{0.4\textwidth}
+		\includegraphics[width=1\textwidth]{FigsC/differenceOpAmp.png}
+		\caption{Standard Difference Op Amp}
+		\label{fig:subim1}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=1\textwidth]{FigsC/c2b.png}
+		\caption{System Difference Op Amp}
+		\label{fig:subim1}
+		\end{subfigure}		
 	\caption{\label{fig:diffamp}Difference Op-amp System}
 	\end{figure}
+
     \begin{align*}
-	\frac{V_{1}(s)}{V_{in}(s)} &= V_{in}(s) - V_{p}(s)
+    \frac{V_{o}(s)}{V_{in}(s)} &= \frac{1+\frac{R_2}{R_1}}{1+\frac{R_3}{R_4}}V_2 - \frac{R_2}{R_1}V_1\\
+	\frac{V_{o}(s)}{V_{in}(s)} &= V_{o}(s) - V_{p}(s)
 	\end{align*}
-    
     
     \textbf{Inverting Op-amp:}\\
     \begin{figure}[H]
-	\centering
-	\includegraphics[width=.3\textwidth]{FigsC/c2a.png}
-	\caption{\label{fig:invamp}Inverting Amplifier System}
+    \centering
+		\begin{subfigure}{0.4\textwidth}
+		\includegraphics[width=1\textwidth]{FigsC/invertingOpAmp.png}
+		\caption{Standard Difference Op Amp}
+		\label{fig:subim1}
+		\end{subfigure}
+		\begin{subfigure}{0.4\textwidth}
+		\includegraphics[width=1\textwidth]{FigsC/c2a.png}
+		\caption{Inverting Op-amp System}
+		\label{fig:subim1}
+		\end{subfigure}		
+	\caption{\label{fig:diffamp}Inverting Op-amp System}
 	\end{figure}
     \begin{align*}
-	\frac{V_{m}(s)}{V_{1}(s)} &= \frac{R_2}{R_1}
-	\end{align*}
+	\frac{V_{m}(s)}{V_{o}(s)} &= \frac{R_2}{R_1}
+	\end{align*}\\
+	Note: The polarity on the inverter transfer function has been flipped.
     
-    
-    \textbf{Motor and pot:}\\
+    \textbf{Motor:}\\
     \begin{align*}
 	\frac{V_{p}(s)}{V_{m}(s)} &= \frac{K_m}{s(s+\alpha)}
 	\end{align*}
+	% \textbf{Motor and pot:}\\
+	% \begin{align*}
+	% \frac{V_{p}(s)}{V_{m}(s)} &= \frac{K_m}{s(s+\alpha)}
+	% \end{align*}
+
+    \begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{FigsC/c2c.png}
+	\caption{\label{fig:c3}Updated Functional Diagram}
+	\end{figure}
+
+	
     
-    something \\
+
     
     
     
-    \pagebreak
-	\item 
-    \textbf{NONIDEAL:}\\
-    \begin{align*}
-	V_{m}(s) &= \frac{R_2}{R_1} V_{1}(s) \\
-    V_{m}(s) &= \frac{s(s+\alpha)}{K_m} V_{p}(s) \\
-    \frac{R_2}{R_1} V_{1}(s) &= \frac{s(s+\alpha)}{K_m} V_{p}(s) \\
-    V_{1}(s) &= \frac{R_1 s(s+\alpha)}{R_2 K_m} V_{p}(s) \\
-    V_{1} &= 
+ %    \pagebreak
+	% \item 
+ %    \textbf{NONIDEAL:}\\
+ %    \begin{align*}
+	% V_{m}(s) &= \frac{R_2}{R_1} V_{1}(s) \\
+ %    V_{m}(s) &= \frac{s(s+\alpha)}{K_m} V_{p}(s) \\
+ %    \frac{R_2}{R_1} V_{1}(s) &= \frac{s(s+\alpha)}{K_m} V_{p}(s) \\
+ %    V_{1}(s) &= \frac{R_1 s(s+\alpha)}{R_2 K_m} V_{p}(s) \\
+ %    V_{1} &= 
+	% \end{align*}
+    
+    
+    
+    
+    
+\pagebreak
+\textbf{System Transfer Function:}\\
+	\begin{align*}
+	G_{c}(s) &= \frac{V_p(s)}{V_i(s)}\\ 
+	&= \frac{V_i(s)}{V_d(s)}\times\frac{V_d(s)}{V_{in}(s))}\\
+	&= \frac{K_m}{s(s+\alpha)}\times\frac{R_2}{R_1}\times(V_i(s)-V_p(s))\\
+	&=\frac{-K_m R_2}{R_1}\bigg(\frac{Vi(s)-V_p(s)}{s(s+\alpha)}\bigg)
 	\end{align*}
-    
-    
-    
-    
-    
-    \pagebreak
-    \textbf{IDEAL:}\\
+From Inverting OP amp: $V_m(s) = \frac{R_2}{R_2}\times V_o(s)$\\\\
+From Motor: $V_m(s) = \frac{s(s+\alpha)V_p(s)}{K_m}$
+	\begin{align*}
+	\therefore\frac{s(s+\alpha)V_p(s)}{K_m} &= \frac{R_2}{R_2}\times V_o(s)\\	
+	V_o(s) &= \frac{R_1s(s+\alpha)}{K_mR_2}V_p(s)	\
+	\end{align*}
+From Difference Op Amp: $V_o(s) = V_i(s) - V_p(s)$
+	\begin{align*}
+	\therefore\frac{R_1s(s+\alpha)}{K_mR_2}V_p(s) &= V_i(s) - V_p(s)\\	
+	V_p(s)\bigg[1-\frac{R_1s(s+\alpha)}{K_mR_2}\bigg] &= V_i(s)\\
+	\frac{V_p(s)}{V_i(s)} &= \frac{1}{1+\frac{R_1s(s+\alpha)}{K_mR_2}}\\\\
+	&= \frac{1}{1+\frac{R_1}{K_mR_2}(s^2+\alpha s)}\\\\
+	&= \frac{1}{(\frac{R_1}{K_mR_2})s^2(\frac{\alpha R_1}{K_mR_2})s+1}\\\\
+	&= \frac{\frac{K_m R_2}{R_1}}{s^2+(\frac{\alpha R_1 K_m R_2}{K_m R_2 R_1})s+\frac{K_m R_2}{R_1}}\\\\
+	&= \frac{\frac{K_m R_2}{R_1}}{s^2+\alpha R_1 K_m R_2s+\frac{K_m R_2}{R_1}}
+	\end{align*}	  
+
+\pagebreak
+    \textbf{Ideal System Transfer Function:}\\
     \begin{align*}
     G_c(s) &= \frac{K G(S)}{1 + K G(s) H(s)} \\\\
     G(s) &= \frac{K_m}{s(s+\alpha)} \\
@@ -1414,7 +1480,7 @@ Add the actual OS from prac/theo \\
 	
 	
 	
-	\item The overshoot and settling time were measured over five different input frequencies in order to determine the effect over varying the input signals frequency. The systems response to these signals was also recorded, and can be found as a set of graphical time domain plots below.
+	\item The overshoot was measured over five different input frequencies in order to determine the effect over varying the input signals frequency. The systems response to these signals was also recorded, and can be found as a set of graphical time domain plots below.
 	\begin{figure}[H]
 	  \begin{subfigure}{0.5\textwidth}
 	  \includegraphics[width=0.9\linewidth]{Matlab_Figures/y2_dataset1_ms.eps} 
@@ -1447,7 +1513,7 @@ Add the actual OS from prac/theo \\
 	\end{figure}
 	
 	\pagebreak
-	The peak overshoot and \textbf{settling time} were measured using the cursors \textbf{stuuff}\\
+	The percentage overshoot was calculated using the cursors on the digital CRO machine to measure the peak overshoot and the steady state voltage (average). 
 	$$ \%OS = \frac{V_{peak}-V_{average}}{V_{average}} $$
 	\begin{align*}
 	OS(0.5Hz) 	&= \frac{525-495}{495} = 6.1 	\\
@@ -1460,29 +1526,25 @@ Add the actual OS from prac/theo \\
 	The results of this analysis can be found in the following table.
 	
 \begin{center}
-    \begin{tabular}{| c | c | c |}
+    \begin{tabular}{| c | c |}
     \hline
-    Input Frequency (Hz)  & Overshoot (\%)    & Settling time (s) 	\\ \hline
-    0.5  	                  & 6.1                   & 1 			\\ \hline
-	0.75  	                  & 5.7                   & -1 			\\ \hline
-	1		                  & 6.1                   & 1			\\ \hline
-	1.25	                  & 6.5                   & 1			\\ \hline
-	1.5		                  & 5.8                   & 1			\\
+    Input Frequency (Hz)  & Overshoot (\%)  \\ \hline
+    0.5  	                  & 6.1  		\\ \hline
+	0.75  	                  & 5.7  		\\ \hline
+	1		                  & 6.1 		\\ \hline
+	1.25	                  & 6.5 		\\ \hline
+	1.5		                  & 5.8 		\\
     \hline
     \end{tabular}
 \end{center}
 	
-	As can be seen almost immediately in the previous plots, as the frequency of the input signal is increased, the output has less time to reach a steady state value. Moreover, once the time elapsed per input cycle is reduced below the settling time, \textbf{the steady state response of the system is lost, and only the transient response has enough time to be viewable.} \\
+	As can be seen almost immediately in the previous plots, as the frequency of the input signal is increased, the output has less time to reach a steady state value. %Moreover, once the time elapsed per input cycle is reduced below the settling time, \textbf{the steady state response of the system is lost, and only the transient response has enough time to be viewable.} \\
+	Eventually, the increasing frequency limits the systems ability to reach a steady state value.\\
 	
-	Eventually, as the frequency increases, the output doesn't have enough time to settle. 	It is also evident from the previous figures, that neither the overshoot, settling time or the steady state error is effected; until eventually the system does not have enough time to reach a steady state value.\\
-	Freq only affects time available to find a steady state value. \\
-	Eventually, there op-amps physical components would not be able to switch fast enough, and \textbf{WHAT} would occur. \\
+	It is also evident from the previous figures and tables, that neither the overshoot, settling time or the steady state error are effected; until eventually the system does not have enough time to reach a steady state value. In addition to this, were the frequency to keep increasing, eventually the op-amps physical components would not be able to switch fast enough, and the output would be attenuated.\\
 	
-	
-	
-	This occurs because \textbf{why}\\
-	Frequency doesn't affect zeta and omega, so settling time and OS should stay the same.\\
-	no energy storing components in the circuit.
+	The frequency does not effect any of the aforementioned properties, because quite simply; \textcolor{red}{the transfer function to which these properties can be derived, is independent of frequency. Which is to be expected, as there are no energy storing components in the system (capacitors, inductors).} 
+
 	
 	
 	
@@ -1509,7 +1571,7 @@ Add the actual OS from prac/theo \\
 	  \caption{\label{fig:gainimpact}Systems response to various gain values.}
 	\end{figure}
 	
-	As you would expect, changing the gain value \textbf{increases OS?} and \textbf{decreases Ts?}. The above images show large evidence to support this comment; as the correlation between these values can be seen clearly. \\
+	As you would expect, changing the gain value \textbf{increases OS?} and \textbf{decreases Ts?}. The above images show large evidence to support this comment; as the correlation between these values can be seen clearly. \textbf{WHY}\\
 	This is useful because \textbf{WHY}
 	
 	
@@ -1536,7 +1598,7 @@ Add the actual OS from prac/theo \\
 	\item Executive Summary
 	\item Introduction
 	\item Procedure Intro
-	\item \textcolor{blue}{Procedure (D)}
+	\item Procedure (D) - add new method
 	\item \textcolor{green}{Results (B)}
 	\item Results (C)
 	\begin{enumerate}
@@ -1552,9 +1614,9 @@ Add the actual OS from prac/theo \\
 	\item Results (D)
 	\begin{enumerate}
 		\item \textbf{DO NEW METHOD}
-		\item \textcolor{blue}{Check tables settling time}
-		\item \textcolor{blue}{Find word}
-		\item \textcolor{blue}{Check results are right (freq doesnt affect system)}
+		\item \textcolor{blue}{Check tables peak overshoot}
+		%\item \textcolor{blue}{Find word}
+		%\item \textcolor{blue}{Check results are right (freq doesnt affect system)}
 		\item \textcolor{blue}{Why is the effect of gain useful?}
 		\item \textcolor{green}{SIMULINK MODEL}
 		\item \textcolor{green}{PI/PD controller}
