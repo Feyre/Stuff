@@ -477,6 +477,38 @@ print('-depsc',strcat('figures',filesep,'y2_dataset3_rms'));
 close
 
 
-%% C4 - Calculate expected time response
+%% C4
+%Calculate expected time response
+Rf = 33 * 10^3;
+R1 = 10 * 10^3;
+alpha = 38.61;
+Km = 326;
+K = Rf / R1;
+G_c = tf(K * Km, [1 alpha K * Km]);
+Y_c = tf(K * Km, [1 alpha K * Km 0]);
+
+[num, den] = tfdata(Y_c,'v');
+%r = gain, p = pole, k = direct term ie r / (s + p) + k
+[r, p, k] = residue(num,den);
+
+x = tf(r(1),[1 p(1)]);
+y = tf(r(2),[1 p(2)]);
+z = tf(r(3),[1 p(3)]);
+partialFrac = [x y z];
 
 %% C5 - Calculate theretical gain required for 5% overshoot. Determine requried resistors.
+
+%% C6
+% Import experimental data into matla. Compare closed loop response with
+% prediced model Y_c. What does this suggest about model derived in part B?
+data = csvread('PartB_Test1.csv',2,0);  % Read in test 1
+te_1 = data(1:end,1);   % Store te variable
+te_1 = te_1 + abs(te_1(1)); % Move te variable to start at zero
+ye_1 = data(1:end,2);   % Store ye variable
+ye_1step = data(1:end,3);   % Store ye step input variable
+
+
+
+%% D
+%[mag,phase] = bode( G, imag(jw) )
+%http://stackoverflow.com/questions/22837372/how-to-replace-the-laplace-variable-in-a-transfer-function-with-a-number-value
