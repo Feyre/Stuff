@@ -154,7 +154,7 @@ This report provides the documentation and analysis of three closely associated 
 The methods of analysis conducted within this document include thorough mathematical estimations and computational simulations.
 The results of the previously mentioned experiments, beyond showing clearly the benefits and application of closed loop control systems, conclusively show that the input frequency does not effect the overshoot or settling time of the closed loop system, but the gain is proportional these properties. Moreover, the difference in theoretical calculations and practical applications due to un-modeled system interactions was shown in depth.  
 
-\textcolor{red}{Still not really done}\\
+\textcolor{red}{Still not really done}\\\\
 subject matter\\
 methods\\
 findings\\
@@ -163,11 +163,11 @@ recommendations\\
 limitations\\
 
 \section{Aim:}
-\textbf{1-2 sentences on the report purpose}\\
 The purpose of this report is to demonstrate sound knowledge and understanding of basic control systems; more specifically, closed loop feedback systems. This report entails (beyond other things) the procedures followed during the practical lab, the associated results or observational data, and the answers to all questions posed during the lab.  
 
 \section{Introduction:}
-\textbf{0.5-1 page overview of the lab}
+\textbf{0.5-1 page overview of the lab}\\
+
 
 
 \pagebreak
@@ -175,18 +175,7 @@ The purpose of this report is to demonstrate sound knowledge and understanding o
 \pagebreak
 {\hypersetup{linkcolor=black} \listoffigures}
 
-
-
-
-
-
-
 \pagebreak
-\section{Procedure:}
-\textbf{brief summary of prac procedure as described in this document (0.5-1page for each part (bcd))}\\
-This section consists of individual summaries of the procedures required in each section, accomplished during the practical labs.
-Briefly cover what each part of prac is to accomplish.
-
 \section{Acknowledgments}
 Two groups worked in combination during the lab:
 \begin{enumerate}
@@ -203,11 +192,18 @@ Work related to the prac is set up in three parts:
 	All work performed post lab were produced in combination of Declan Gilmour and Lachlan Nicholson.
 	This section contains all matlab code used during the practical lab. Lachlan Nicholson (n8866864) and Declan Gilmour (n8871566) worked in a prac group with Thomas Wagner (n8840121) and Antony Foster (n8647780).\\
 \end{enumerate}
-%\subsection{Part A}
-%pre-lab
+
+
 
 
 \pagebreak
+\section{Procedure:}
+This section consists of individual summaries of the procedures required in each section, accomplished during the practical labs.
+Briefly cover what each part of prac is to accomplish.
+%\subsection{Part A}
+%pre-lab
+
+%\pagebreak
 \subsection{Experiment B}
 Experiment B utilizes experimentally measured time response data to calculate approximate values for $K_m$ and $\alpha$. The pre-lab preparation for this section of the practical required familiarization with all aspects of the oscilloscopes and their functions (triggers, scales, saving data); moreover, it was suggest that the user should also be familiar with the construction process outlined within the coming procedures.
 In an attempt to better show the procedures of this particular experiment, the required tasks will be separated into two categories; the setup, and the analysis. Both of the aforementioned sections will be displayed in numbered point formation to show clearly the extent of each step.\\
@@ -480,8 +476,7 @@ After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the
 	\end{figure}
 
 
-Again, refer to the appendix for a detailed analysis, however; the measured overshoot for the calculated values was under the expected 5\% \\
-Moreover, below is the recorded systems response after experimentally changing the resistor values, and hence the gain, to produce a 5\% overshoot. The experimental resistor values used to produce this overshoot were as follows; $R_1 = 10k$, $R_f = 62.8k \approx 56k + 6.8k$, resulting in a gain of $K = 6.28$. 
+Again, refer to the appendix for a detailed analysis, however; the measured overshoot for the calculated values was under the expected 5\%. Additionally, below is the recorded systems response after experimentally changing the resistor values, and hence the gain, to produce a 5\% overshoot. The experimental resistor values used to produce this overshoot were as follows; $R_1 = 10k$, $R_f = 62.8k \approx 56k + 6.8k$, resulting in a gain of $K = 6.28$. 
 
 	\begin{figure}[H]
 		\centering
@@ -490,22 +485,18 @@ Moreover, below is the recorded systems response after experimentally changing t
 		\label{fig:expgain}
 	\end{figure}
 
-<<<<<<< HEAD
-Damping ratio (zeta): 0.690107\\
-Natural frequency (Wn): 27.973934\\
-Peak time (Tp): 0.155179\\
-\%OS (Mp): 0.050000\\
-Settling Time (Ts): 0.207200\\
-WHAT WE CAN SEE FROM THIS\\
-=======
 From the figures above, it can be seen that whilst the circuit exhibits the expected features of a closed loop transfer function of this type, there is also a large difference between the expected and actual overshoot resulting from the calculated resistor values. In section~\ref{sec:c}, the $\%_{error}$ was calculated to be $61.8\%$, where the difference in gain between the theoretical and practical values is likely caused by un-modeled losses such as gearbox, friction.
->>>>>>> origin/master
 
 new method\\
 comparisons\\
 C8\\
 
-
+%Damping ratio (zeta): 0.690107\\
+%Natural frequency (Wn): 27.973934\\
+%Peak time (Tp): 0.155179\\
+%\%OS (Mp): 0.050000\\
+%Settling Time (Ts): 0.207200\\
+%WHAT WE CAN SEE FROM THIS\\
 
 
 
@@ -554,9 +545,9 @@ Thus, as neither $W_n$ or $\zeta$ are dependent on frequency, both overshoot and
 This explains why besides the reduced time available for the signal to settle, no visible changes to these properties were observed as the frequency was increased. 
 
 The impact of the systems gain however, was much more noticeable. From figure~\ref{fig:gainimpact}, it can be seen that increasing the gain resulted in an increased overshoot and settling time. This has been proven more in depth in the associated answers section, but a summary of the findings can be found below.  \\
-From the previous equations, it can be seen that both $\zeta$ and $W_n$ rely on the gain ($K = R_f/R_1$). Furthermore, this means both the overshoot and settling time rely on the gain factor.
-\textbf{SUB IN TO FIND OS and Ts AND SHOW THEY RELY ON GAIN, PROP/invPROP}\\
-\textbf{WHY IS THIS USEFUL - prop controller?}\\
+From the previous equations, it can be seen that both $\zeta$ and $W_n$ rely on the gain ($K = R_f/R_1$). Furthermore, this means both the overshoot and settling time rely on the gain factor. This is incredibly useful in control systems applications, as changing the gain alone can alter system properties such as overshoot and settling time.\\
+%\textbf{SUB IN TO FIND OS and Ts AND SHOW THEY RELY ON GAIN, PROP/invPROP}\\
+%\textbf{WHY IS THIS USEFUL - prop controller?}\\
 \textcolor{red}{D4/D5}
 
 
@@ -644,7 +635,7 @@ print('-depsc','a4')
   
   
   
-    \item \textbf{steady/transient Q}
+    \item As can be seen by the supplied transfer function $G_0(s) = \frac{K_m}{s(s+\alpha)}$, the steady state response is predominantly determined by $K_m$, whereas the transient response is determined by the pole at $s = -\alpha$. This what you would expect from such a system. 
     
     
     
@@ -714,7 +705,7 @@ print('-depsc','a6b')
     
     
     \pagebreak
-    \item Using matlabs random number generator, uncertainty was added to the output $y_1(t)$, and both the ideal and noisy response were plotted. \textbf{QUESTIONS}
+    \item Using matlabs random number generator, uncertainty was added to the output $y_1(t)$, and both the ideal and noisy response were plotted. If the noise value where changed, it would increase the deviation from the estimated system response proportional to the amount changed. The modeling of noise in this system is not completely accurate; this is because in real world application, noise is not evenly distributed along the domain of the signal, the noise is also not usually distributed in a set range of deviation away from the clean signal. Common sources of noise in these real world applications include electrical noise from power sources and grounds, external disruptions from whether and EMF, and locational noise being induced from the inductance in the circuits wires.  
     \begin{figure}[H]
 	\centering
 	\includegraphics[width=.8\textwidth]{PreLach/a7.eps}
@@ -749,7 +740,7 @@ print('-depsc','a7')
 	\item 2
 	\item True
 	\item False, True, Increase Constantly, $G_0(s)$
-	\item data = data(527:end), calc = calc(100:end)
+	\item data = data(527:end), calc = calc(100:end), then pad end of the shorter vector with zeros (to ensure the same length).
 	\item Divide 1st response by gain of 1.38, or multiply with 2nd response. 
 	\item Refer to the previous section. 
 \end{enumerate}
@@ -1912,8 +1903,8 @@ As mentioned previously, a PI compensator would remove the steady state error, b
 	  \caption{\label{fig:gainimpact}Systems response to various gain values.}
 	\end{figure}
 	
-	As you would expect, changing the gain value \textbf{increases OS?} and \textbf{decreases Ts?}. The above images show large evidence to support this comment; as the correlation between these values can be seen clearly. \textbf{WHY}\\
-	This is useful because \textbf{WHY}
+	As you would expect, changing the gain value proportionally affects the peak overshoot and settling time. The above images show large evidence to support this comment; as the correlation between these values can be seen clearly. From the equations required to calculate $\%OS$ and $T_s$ mentioned previously, it can be seen that the aforementioned statement is correct, as increasing the gain increases both the overshoot and settling time.
+	This is extremely useful in control systems engineering, as changing the gain alone can alter system properties such as those mentioned previously. This type of controller is known as a proportional controller, and has an extremely large number of real world applications.
 \pagebreak
 	\begin{lstlisting}
 %% D3
