@@ -726,3 +726,12 @@ close
 % Build closed loop servo motor model in simulink
 % Plot this simulated response against experimental response
 
+Rf = 33 * 10^3;
+R1 = 10 * 10^3;
+alpha = 38.61;
+Km = 326;
+K = Rf / R1;
+
+t = linspace(0,0.8,100);
+G_c = tf(K * Km, [1 alpha K * Km]);
+Y_c = 0.5 * step(G_c,t);
