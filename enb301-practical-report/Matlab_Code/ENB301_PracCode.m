@@ -721,3 +721,8 @@ ylabel('y (voltage)')
 legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'D3_100k'));
 close
+
+%% D4
+% Build closed loop servo motor model in simulink
+% Plot this simulated response against experimental response
+

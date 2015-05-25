@@ -9,7 +9,7 @@
 		\usepackage{amssymb}
 		\usepackage{amsfonts}
         \usepackage[colorinlistoftodos]{todonotes}
-
+		\usepackage{enumitem}
 	% Geometry: The layout of the document.
 		
 		\usepackage[width = 17 cm, left = 2 cm, height = 22 cm, top = 4 cm]{geometry} % A4 Paper, W = 21 cm, H = 29.7 cm. Paperwidth = left + width + right, Paperlength = top + height + bottom.
@@ -186,6 +186,23 @@ The purpose of this report is to demonstrate sound knowledge and understanding o
 \textbf{brief summary of prac procedure as described in this document (0.5-1page for each part (bcd))}\\
 This section consists of individual summaries of the procedures required in each section, accomplished during the practical labs.
 Briefly cover what each part of prac is to accomplish.
+
+\section{Acknowledgments}
+Two groups worked in combination during the lab:
+\begin{enumerate}
+	\item Lachlan Nicholson (n8866864) and Declan Gilmour (n8871566).
+	\item Thomas Wagner (n8840121) and Antony Foster (n8647780).
+\end{enumerate}
+Work related to the prac is set up in three parts:
+\begin{enumerate}[label=\alph*)]
+	\item \textbf{Pre-lab}\\
+	All individual prelab responses and code incuded in this report has been completed solely by Lachlan Nicholson and Declan Gilmour respectively.
+	\item \textbf{Lab}\\
+	Code used within the lab predominanly belongs to Antony Foster and Thomas Wagner. All code beloning to this group was also performed by Declan Gilmour and Lachlan Nicholson and included in this report.
+	\item \textbf{Post-lab}\\
+	All work performed post lab were produced in combination of Declan Gilmour and Lachlan Nicholson.
+	This section contains all matlab code used during the practical lab. Lachlan Nicholson (n8866864) and Declan Gilmour (n8871566) worked in a prac group with Thomas Wagner (n8840121) and Antony Foster (n8647780).\\
+\end{enumerate}
 %\subsection{Part A}
 %pre-lab
 
@@ -473,6 +490,11 @@ Moreover, below is the recorded systems response after experimentally changing t
 		\label{fig:subim2}
 	\end{figure}
 
+Damping ratio (zeta): 0.690107\\
+Natural frequency (Wn): 27.973934\\
+Peak time (Tp): 0.155179\\
+\%OS (Mp): 0.050000\\
+Settling Time (Ts): 0.207200\\
 WHAT WE CAN SEE FROM THIS\\
 
 compare models\\
@@ -958,7 +980,13 @@ close
 
 \pagebreak
 \textbf{PRELAB QUESTIONS:}
-
+\begin{enumerate}
+	\item 2
+	\item True
+	\item False, True, Increase Constantly, $G_0(s)$
+	\item experimentalFixed = experimental(527:end);\\matlabFixed = matlab(100:end);
+	\item Divide first response by 1.38 or multiply second response by 1.38.
+\end{enumerate}
 
 
 
