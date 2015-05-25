@@ -1263,6 +1263,7 @@ close
     
     
 \pagebreak
+\item Calculate the complete system transfer function $G_c(s)$. \\\\
 \textbf{System Transfer Function:}\\
 	\begin{align*}
 	G_{c}(s) &= \frac{V_p(s)}{V_{in}(s)}\\ 
@@ -1300,6 +1301,8 @@ From Difference Op Amp: $V_o(s) = V_i(s) - V_p(s)$
     G_c(s) &= \frac{\frac{R_f}{R_1}K_m} {s(s+\alpha) + \frac{R_f}{R_1}K_m} \\
     G_c(s) &= \frac{\frac{R_f}{R_1}K_m} {s^2 + s\alpha + \frac{R_f}{R_1}K_m}
 	\end{align*}
+    
+    As can be seen, both the of the above methods produce the same result, the first requiring more complex algebra and all of the calculated transfer functions; the second method understands that the summing amplifier and inverting amplifier can be modeled as a summing node and gain block respectively (refer to figure~\ref{fig:updatedfuncagram}).
     
     Where $K_m = 326$, $\alpha = 38.61$, $R_f = 33k$ and $R_1 = 10k$.
     Thus,
@@ -1448,7 +1451,7 @@ Steady state error was noticeable in the system, likely caused by mechanical los
 
 However, the drawbacks for a PI controller include, but are not limited too; \textbf{WHAT}.
 
-A good example of a control system that required low steady state error
+A good example of a control system that required low steady state error is the cruise control on a car. This is largly 
 
 Add the actual OS from prac/theo \\
 
