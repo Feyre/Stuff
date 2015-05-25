@@ -552,22 +552,22 @@ yd_0_75 = data(1:end,3);   % Store yc variable
 yd_0_75Step = data(1:end,2);   % Store tc step input variable
 
 data = csvread('PartD_1_0Hz.csv',2,0);  % Read in 1.25Hz
-td_1_0 = data(1:end,1);   % Store tc variable
+td1_0 = data(1:end,1);   % Store tc variable
 td_1_0 = td_1_0 + abs(td_1_0(1));
 yd_1_0= data(1:end,3);   % Store yc variable
 yd_1_0Step = data(1:end,2);   % Store tc step input variable
 
-data = csvread('PartD_1_25Hz.csv',2,0);  % Read in 0.5Hz
+data = csvread('PartD_0_5Hz.csv',2,0);  % Read in 0.5Hz
 td_1_25 = data(1:end,1);   % Store tc variable
 td_1_25 = td_1_25 + abs(td_1_25(1));
 yd_1_25 = data(1:end,3);   % Store yc variable
 yd_1_25Step = data(1:end,2);   % Store tc step input variable
 
-data = csvread('PartD_1_50Hz.csv',2,0);  % Read in 1.5Hz
-td_1_50 = data(1:end,1);   % Store tc variable
-td_1_50 = td_1_50 + abs(td_1_50(1));
-yd_1_50 = data(1:end,3);   % Store yc variable
-yd_1_50Step = data(1:end,2);   % Store tc step input variable
+data = csvread('PartD_0_5Hz.csv',2,0);  % Read in 1.5Hz
+td_1_5 = data(1:end,1);   % Store tc variable
+td_1_5 = td_1_5 + abs(td_1_5(1));
+yd_1_5 = data(1:end,3);   % Store yc variable
+yd_1_5Step = data(1:end,2);   % Store tc step input variable
 
 
 figure
@@ -585,7 +585,7 @@ title('Closed Loop Response [0.75Hz Step]')
 xlabel('t (sec)')
 ylabel('y (voltage)')
 legend('Motor Response', 'Step input', 'Location','SouthEast')
-print('-depsc',strcat('figures',filesep,'D2_0_75Hz'));
+print('-depsc',strcat('figures',filesep,'D2_0_5Hz'));
 close
 
 figure
@@ -594,7 +594,7 @@ title('Closed Loop Response [1.0Hz Step]')
 xlabel('t (sec)')
 ylabel('y (voltage)')
 legend('Motor Response', 'Step input', 'Location','SouthEast')
-print('-depsc',strcat('figures',filesep,'D2_1_0Hz'));
+print('-depsc',strcat('figures',filesep,'D2_0_5Hz'));
 close
 
 figure
@@ -603,15 +603,15 @@ title('Closed Loop Response [1.25Hz Step]')
 xlabel('t (sec)')
 ylabel('y (voltage)')
 legend('Motor Response', 'Step input', 'Location','SouthEast')
-print('-depsc',strcat('figures',filesep,'D2_1_25Hz'));
+print('-depsc',strcat('figures',filesep,'D2_0_5Hz'));
 close
 
 figure
-plot(td_1_50,yd_1_50,'k',td_1_50,yd_1_50Step,'b')
+plot(td_1_5,yd_1_5,'k',td_0_5,yd_0_5Step,'b')
 title('Closed Loop Response [1.50Hz Step]')
-xlabel('t (sec)')
-ylabel('y (voltage)')
+xlabel('te (sec)')
+ylabel('ye (voltage)')
 legend('Motor Response', 'Step input', 'Location','SouthEast')
-print('-depsc',strcat('figures',filesep,'D2_1_50Hz'));
+print('-depsc',strcat('figures',filesep,'D2_0_5Hz'));
 close
 
