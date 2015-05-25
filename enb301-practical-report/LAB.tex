@@ -1537,6 +1537,8 @@ Add the actual OS from prac/theo \\
     \hline
     \end{tabular}
 \end{center}
+
+
 	
 	As can be seen almost immediately in the previous plots, as the frequency of the input signal is increased, the output has less time to reach a steady state value. %Moreover, once the time elapsed per input cycle is reduced below the settling time, \textbf{the steady state response of the system is lost, and only the transient response has enough time to be viewable.} \\
 	Eventually, the increasing frequency limits the systems ability to reach a steady state value.\\
@@ -1545,8 +1547,68 @@ Add the actual OS from prac/theo \\
 	
 	The frequency does not effect any of the aforementioned properties, because quite simply; \textcolor{red}{the transfer function to which these properties can be derived, is independent of frequency. Which is to be expected, as there are no energy storing components in the system (capacitors, inductors).} 
 
-	
-	
+\begin{figure}[H]
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_0_5Hz_Overshoot.png} 
+  \caption{Overshoot 0.5Hz}
+  \label{fig:subim1}
+  \end{subfigure}	  
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_0_75Hz_Overshoot.png}
+  \caption{Overshoot 0.75Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+  
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_1_0Hz_Overshoot.png}
+  \caption{Overshoot 1Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_1_25Hz_Overshoot.png}
+  \caption{Overshoot 1.25Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_1_50Hz_Overshoot.png}
+  \caption{Overshoot 1.5Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+\caption{\label{fig:freqimpact}Ossilloscope SSE Measurements}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_0_5Hz_SSE.png}
+  \caption{SSE 0.5Hz}
+  \label{fig:subim2}
+  \end{subfigure}	  
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_0_75Hz_SSE.png}
+  \caption{SSE 0.75Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+ 
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_1_0Hz_SSE.png}
+  \caption{SSE 1Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_1_25Hz_SSE.png}
+  \caption{SSE 1.25Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\textwidth}
+  \includegraphics[width=0.95\linewidth]{Ossilloscope/PartD_1_50Hz_SSE.png}
+  \caption{SSE 1.5Hz}
+  \label{fig:subim2}
+  \end{subfigure}
+\caption{\label{fig:freqimpact}Ossilloscope SSE Measurements}
+\end{figure}
+
 	
 	
 	
