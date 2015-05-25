@@ -264,13 +264,13 @@ The final experiment, using the same circuit constructed in the previous experim
 
 \textbf{ANALYSIS:}
 \begin{enumerate}
-	\item The closed loop response of the system was estimated \textbf{using the method outlined in the previous procedures}
-	\item The $K_m$ and $\alpha$ values were then compared to \textbf{the method outlined in worksheet}
+	\item In an attempt to estimate the closed loop response of the system post-lab, using only the available equipment; the input signal was set to a frequency sweep in order to create a bode plot from the resulting output data. The data was saved to the USB.
+	%\item The $K_m$ and $\alpha$ values were then compared to \textbf{the method outlined in worksheet}
 	\item Using the same circuit constructed in the previous procedure (system gain set at the experimentally found gain required to produce a 5\% OS) the overshoot was measured and recorded, for input frequencies of 0.5Hz, 0.75Hz, 1Hz, 1.25Hz and 1.5Hz. 
 	\item Additionally, the systems response for each frequency was also recorded and saved in-case of future need.
 	\item The impact of altering the gain was then examined, as the response of the system was recorded twice more; using a new gain value each time.
 	\item The closed loop system was then simulated in Simulink, using the model parameters determined in the previous experiment. A group discussion was raised over the quality of the model, the results of which can be found in section~\ref{sec:d}.
-	\item Another group discussion was began, as a proposal for a \textbf{PI/PD/PID} controller that would achieve a faster response was formed and simulated. Refer to the previously mentioned section for the in depth proposal.
+	\item Another group discussion began, as a proposal for a PID controller that would achieve a faster response was formed and simulated. Refer to the previously mentioned section for the in depth proposal.
 \end{enumerate}
 
 
@@ -464,49 +464,44 @@ end
 \subsection{Part C}
 As mentioned previously, the goal of experiment C was to construct a closed loop control system (feedback) for the position of the motor (voltage across the potentiometer); making use of the estimated open loop response variables found in part B ($K_m$ and $\alpha$). 
 
-The pre-experimental aspect of this section required the breakdown and analysis of the circuit diagram captured in figure~\ref{fig:c1_2_}, the full method and calculations has been provided in section~\ref{sec:c}; the in depth analysis resulted in an estimated overall transfer function for the system. 
+The pre-experimental aspect of this section required the breakdown and analysis of the circuit diagram captured in figure~\ref{fig:c1_2_}, the full method and calculations has been provided in section~\ref{sec:c}; the in depth analysis resulted in an estimated overall closed loop transfer function for the system. 
 
 $$ G_c(s) = \frac{\frac{R_f}{R_1}K_m} {s^2 + s\alpha + \frac{R_f}{R_1}K_m} $$
 $$ G_c(s) = \frac{1075.8} {s^2 + 38.61s + 1075.8} $$\\
 
 %\textbf{This is/isnt what we'de expect}\\
 
-After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the correct polarity of the motor, the response of the system was captured and saved by the digital CRO. The closed loop response of this system was measured \textcolor{red}{3} times, and the graphical representation of this data has been included below.\\
+After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the correct polarity of the motor, the response of the system was captured and saved by the digital CRO. The closed loop response of this system was measured, a capture of the scope can be found below, whilst the graphical representation of this data has been included in figure~\ref{fig:closedloop}.\\
 	\begin{figure}[H]
 		\centering
 			\includegraphics[width=0.5\linewidth]{Oscilloscope/PartC_Theoretical_Overshoot.png} 
 			\caption{Theoretical Closed Loop Response}
-			\label{fig:subim1}
+			\label{fig:calcgain}
 	\end{figure}
 
 
-WHAT WE CAN SEE FROM THIS (AS VOLTAGE GOES UP, THIS GOES UP) \\
+Again, refer to the appendix for a detailed analysis, however; the measured overshoot for the calculated values was under the expected 5\% \\
 Moreover, below is the recorded systems response after experimentally changing the resistor values, and hence the gain, to produce a 5\% overshoot. The experimental resistor values used to produce this overshoot were as follows; $R_1 = 10k$, $R_f = 62.8k \approx 56k + 6.8k$, resulting in a gain of $K = 6.28$. 
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\linewidth]{Oscilloscope/PartC_Experimental_Overshoot.png}
 		\caption{Experimental Closed Loop Response}
-		\label{fig:subim2}
+		\label{fig:expgain}
 	\end{figure}
 
+<<<<<<< HEAD
 Damping ratio (zeta): 0.690107\\
 Natural frequency (Wn): 27.973934\\
 Peak time (Tp): 0.155179\\
 \%OS (Mp): 0.050000\\
 Settling Time (Ts): 0.207200\\
 WHAT WE CAN SEE FROM THIS\\
+=======
+From the figures above, it can be seen that whilst the circuit exhibits the expected features of a closed loop transfer function of this type, there is also a large difference between the expected and actual overshoot resulting from the calculated resistor values. In section~\ref{sec:c}, the $\%_{error}$ was calculated to be $61.8\%$, where the difference in gain between the theoretical and practical values is likely caused by un-modeled losses such as gearbox, friction.
+>>>>>>> origin/master
 
-compare models\\
-compare gains\\
 new method\\
-
-
-
-closed loop control system for the position of the motor\\
-overall TF\\
-estimated gain for 5\% OS\\
-practical gain for 5\% OS\\
 comparisons\\
 C8\\
 
@@ -558,7 +553,7 @@ T_s &= \frac{4}{\zeta W_n}
 Thus, as neither $W_n$ or $\zeta$ are dependent on frequency, both overshoot and settling time are also independent of frequency. 
 This explains why besides the reduced time available for the signal to settle, no visible changes to these properties were observed as the frequency was increased. 
 
-The impact of the systems gain however, was much more noticeable. From figure~\ref{fig:gainimpact}, it can be seen that increasing the gain resulted in an increased overshoot and a decreased settling time. This has been proven more in depth in the associated answers section, but a summary of the findings can be found below.  \\
+The impact of the systems gain however, was much more noticeable. From figure~\ref{fig:gainimpact}, it can be seen that increasing the gain resulted in an increased overshoot and settling time. This has been proven more in depth in the associated answers section, but a summary of the findings can be found below.  \\
 From the previous equations, it can be seen that both $\zeta$ and $W_n$ rely on the gain ($K = R_f/R_1$). Furthermore, this means both the overshoot and settling time rely on the gain factor.
 \textbf{SUB IN TO FIND OS and Ts AND SHOW THEY RELY ON GAIN, PROP/invPROP}\\
 \textbf{WHY IS THIS USEFUL - prop controller?}\\
@@ -756,6 +751,7 @@ print('-depsc','a7')
 	\item False, True, Increase Constantly, $G_0(s)$
 	\item data = data(527:end), calc = calc(100:end)
 	\item Divide 1st response by gain of 1.38, or multiply with 2nd response. 
+	\item Refer to the previous section. 
 \end{enumerate}
 
 
@@ -1677,7 +1673,7 @@ From Difference Op Amp: $V_o(s) = V_i(s) - V_p(s)$
 		\caption{Experimental Closed Loop Response}
 		\label{fig:subim2}
 		\end{subfigure} 
-	\caption{\label{fig:rand}Servo Motor Closed Response}
+	\caption{\label{fig:closedloop}Servo Motor Closed Response}
 	\end{figure}
 	
 	\begin{center}
