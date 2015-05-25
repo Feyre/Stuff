@@ -397,8 +397,8 @@ end
 km_mean = (mean(km_ms) + mean(km_rms)) / 2;
 alpha_mean = (mean(alpha_ms) + mean(alpha_rms)) / 2;
 	\end{lstlisting} 
-	It should be noted, during the practical Lachlan Nicholson (n8866864) and Declan Gilmour (n8871566) worked with another group of two students Tony Foster (n8647780) and Tom Wagner (nxxxxxxx). A different matlab script belonging to these two students was used to find $K_m$ and $\alpha$. The code use to do so is attached in the appendix of this report.\\
-	From the code used suring the prac it was found $K_m = $ and $\alpha = $
+	It should be noted, during the practical Lachlan Nicholson (n8866864) and Declan Gilmour (n8871566) worked with another group of two students Tony Foster (n8647780) and Tom Wagner (n8840121). A different matlab script belonging to these two students was used to find $K_m$ and $\alpha$. The code use to do so is attached in the appendix of this report.\\
+	From the code used during the prac it was found $K_m = 326$ and $\alpha = 38.61$
 \pagebreak
 	\item The $\alpha$ value found above was then used to calculate $K_m$ and $\beta$ values. The general transfer function of input voltage to motor shaft velocity was then used: $G(s) = \frac{K_m}{(s+\alpha)(s+\beta)}$.\\
 	The same process as in part 4 of this section was used, with three sets of data and two different figure of merrit calculations to find the optimum $K_m$ and $\beta$ values:
@@ -1227,9 +1227,16 @@ close
    \caption{Data Set 3 (rms)}
    \label{fig:subim2}
    \end{subfigure}
-   \caption{\label{fig:rand}Servo Motor Response Modeled}
+   \caption{\label{fig:fig_18}Servo Motor Response Modeled}
    \end{figure}
-	\item The mechanical constant $\alpha$ was found to be $\alpha = alpha_{mean}$. Using the second order equation $G(s) = \frac{K_m}{(S + \alpha)}$ new values of gain constant $k_m$ and electrical constant $\beta$. Values were found for $y_1(t) \approx y_2(t)$.
+	\item 
+	$K_m = 426.6867$ and $\beta = 0.0646$. When considering the general transfer function of input voltage $G(s) = \frac{K_m}{(s+\alpha)(s+\beta)}$, a very small $\beta$ value would turn this into the simplified input voltage to motor shaft transfeer function $G_o(s) = \frac{V_p(s)}{V_m(s)} = \frac{K_m}{s(s + \alpha)}$.\\\\
+	Therefore, the $\beta$ value of 0.0646 suggests the original assumption of the simplified input voltage to motor shaft transfer function was correct. The useful approximation if $|\beta| < 10|\alpha|$ the transient response will be dominated by $\alpha$ satisfies this system.\\
+	Values were found for $y_1(t) \approx y_2(t)$ as shown in Fig~\ref{fig:fig_18} and Fig~\ref{fig:fig_19} respectively.\\
+	From these observations, it is evident the electrical constant $\beta$ is negligable in this system. 
+
+
+	The mechanical constant $\alpha$ was found to be $\alpha = alpha_{mean}$. Using the second order equation $G(s) = \frac{K_m}{(S + \alpha)}$ new values of gain constant $k_m$ and electrical constant $\beta$. Values were found for $y_1(t) \approx y_2(t)$.
     The average constants found are as follows:
     $\beta = 0.0646$
     $k_m = 426.6867$
@@ -1268,7 +1275,7 @@ close
   \caption{Data Set 3 (rms)}
   \label{fig:subim2}
   \end{subfigure}
-    \caption{\label{fig:rand}Servo Motor Response Modeled: $k_m$ and $\beta$}
+    \caption{\label{fig:fig_19}Servo Motor Response Modeled: $k_m$ and $\beta$}
     \end{figure}
     
     \pagebreak
@@ -1540,7 +1547,13 @@ From Difference Op Amp: $V_o(s) = V_i(s) - V_p(s)$
     
     
     
-	\item \textbf{\textcolor{red}{C4 - Matlab - Declan?}}
+	\item
+	$G_c(s) = \frac{1075.8} {s^2 + 38.61s + 1075.8}$ has been used to produce the expected time responce $y_c(t)$ of this system. The calculated characteristics are as follows:\\
+	Damping ratio (zeta): 0.690107\\
+	Natural frequency (Wn): 27.973934\\
+	Peak time (Tp): 0.155179\\
+	\%OS (Mp): 0.050000\\
+	Settling Time (Ts): 0.207200
     
     
     
@@ -1718,11 +1731,6 @@ As mentioned previously, a PI compensator would remove the steady state error, b
 	  \caption{Closed loop time domain response to 1.5Hz input.}
 	  \label{fig:subim2}
 	  \end{subfigure}
-	  \begin{subfigure}{0.5\textwidth}
-	  \includegraphics[width=0.9\linewidth]{Matlab_Code/Figures/D2_0_5Hz.eps}
-	  \caption{Closed loop time domain response to 1.5Hz input.}
-	  \label{fig:subim2}
-	  \end{subfigure}
 	\caption{\label{fig:freqimpact}Systems response to various input frequencies.}
 	\end{figure}
 	
@@ -1854,9 +1862,104 @@ As mentioned previously, a PI compensator would remove the steady state error, b
 	
 	
 	
-	
-	\item \textbf{\textcolor{red}{C4 - Matlab - Declan?}} simulink 
-	\item \textbf{\textcolor{red}{C4 - Matlab - Declan?}} PD/PI/PID controller 
+\pagebreak	
+	\item 
+	$G_c(s) = \frac{1075.8}{s^2 + 38.61s + 1075.8}$ has been used to produce the expected time response $y_c(t)$ of ths system.\\\\
+	Damping ratio (zeta): 0.690107\\
+	Natural frequency (Wn): 27.973934\\
+	Peak time (Tp): 0.155179\\
+	\%OS (Mp): 0.050000\\
+	Settling Time (Ts): 0.207200
+	\begin{lstlisting}
+%% C4
+%Calculate expected time response
+Rf = 33 * 10^3;
+R1 = 10 * 10^3;
+alpha = 38.61;
+Km = 326;
+K = Rf / R1;
+
+t = linspace(0,0.8,100);
+G_c = tf(K * Km, [1 alpha K * Km]);
+Y_c = 0.5 * step(G_c,t);
+
+figure
+plot(t,Y_c,'k')
+title('Experimental vs estimated TF [Set 3 Adjusted, root mean square error]')
+xlabel('te (sec)')
+ylabel('Amplitude')
+print('-depsc',strcat('figures',filesep,'C4'));
+close
+
+%Y_c = tf(K * Km, [1 alpha K * Km 0]);
+num = 0.5 * K * Km;
+den = [1 alpha K*Km 0];
+% [num, den] = tfdata(Y_c,'v');
+%r = gain, p = pole, k = direct term ie r / (s + p) + k
+[r, p, k] = residue(num,den);
+% 
+syms s;
+partialFrac = [r(1)/(s-p(1)) r(2)/(s-p(2)) r(3)/(s-p(3))];
+time_response = ilaplace(partialFrac);  % Inverse laplace from s domain to t domain
+time_response = vpa(time_response,5); % Round to 5 sig figs
+
+zeta = -log(5/100) / sqrt(pi^2 +log(5/100)^2);  % Damping ratio
+Wn = alpha / (2 * zeta);    % Natural frequency
+Wd = Wn * sqrt(1 - zeta^2);
+Tp = pi / Wd;   % Peak time
+Mp = exp((-pi  * zeta) / sqrt(1 - zeta^2)); % Percentage overshoot
+Ts =  4 / (zeta * Wn);   % Settling time
+	\end{lstlisting}
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\textwidth]{Matlab_Code/Figures/C4.eps}
+
+	\caption{\label{fig:funcagram}Time response of system.}
+	\end{figure}
+
+	\item \textbf{\textcolor{red}{C4 - Matlab - Declan?}} PD/PI/PID controller
+\pagebreak 
+\subsection{Prac Code}
+This section contains all matlab code used during the practical lab. Lachlan Nicholson (n8866864) and Declan Gilmour (n8871566) worked in a prac group with Thomas Wagner (N8840121) and Antony Foster (N8647780).\\
+\textbf{This code was produced by Thomas Wagner N8840121 and Antony Foster N8647780.}
+\begin{lstlisting}
+%------------B1. Loading data----------------------------%
+[te,ye] = Data_cutting(closed,2,1);
+[te,ye] = timing_fix(te,ye);
+figure(i);i=i+1;
+plot(te,ye,'k');
+title('Test data plotted');
+ylabel('Amplitude');
+xlabel('Time_{sec}');
+
+%------------B2 Plotting y2 and Experimental data---------%
+
+Vm=1;
+y3=step(G_1*Vm,te);
+figure(i);i=i+1;
+plot(te,y3,te,ye);
+title('Test data Vs Calculated Km and Alpha ');
+ylabel('Amplitude');
+xlabel('Time_{sec}');
+
+%-------------B3 Figure of merit-------------------------%
+y_rms =@(x0)Variable_finder2(x0,'results.csv',te,ye);
+
+%-------------B4 Recalculated values---------------------%
+
+params = fminsearch(y_rms,[Km, a]);
+y3_num =  [params(1)];
+y3_den = [1 params(2) 0];
+G_3 = tf(y3_num,y3_den)
+y3= step(G_3*Vm,te);
+ 
+figure(i);i=i+1;
+plot(te,y3,te,ye);
+title('Test data Vs ReCalculated Km and Alpha');
+ylabel('Amplitude');
+xlabel('Time_{sec}');
+\end{lstlisting}
 \end{enumerate}
 
 

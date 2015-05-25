@@ -1,0 +1,7 @@
+Time response Characteristics.
+
+Damping ratio (zeta): 0.690107
+Natural frequency (Wn): 27.973934
+Peak time (Tp): 0.155179
+%OS (Mp): 0.050000
+Settling Time (Ts): 0.207200

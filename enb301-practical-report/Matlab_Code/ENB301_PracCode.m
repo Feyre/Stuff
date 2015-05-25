@@ -532,18 +532,46 @@ R1 = 10 * 10^3;
 alpha = 38.61;
 Km = 326;
 K = Rf / R1;
-G_c = tf(K * Km, [1 alpha K * Km]);
-Y_c = tf(K * Km, [1 alpha K * Km 0]);
 
-[num, den] = tfdata(Y_c,'v');
+t = linspace(0,0.8,100);
+G_c = tf(K * Km, [1 alpha K * Km]);
+Y_c = 0.5 * step(G_c,t);
+
+figure
+plot(t,Y_c,'r')
+title('Time response plot')
+xlabel('te (sec)')
+ylabel('Amplitude')
+print('-depsc',strcat('Figures',filesep,'C4'));
+close
+
+%Y_c = tf(K * Km, [1 alpha K * Km 0]);
+num = 0.5 * K * Km;
+den = [1 alpha K*Km 0];
+% [num, den] = tfdata(Y_c,'v');
 %r = gain, p = pole, k = direct term ie r / (s + p) + k
 [r, p, k] = residue(num,den);
+% 
+syms s;
+partialFrac = [r(1)/(s-p(1)) r(2)/(s-p(2)) r(3)/(s-p(3))];
+time_response = ilaplace(partialFrac);  % Inverse laplace from s domain to t domain
+time_response = vpa(time_response,5); % Round to 5 sig figs
 
-x = tf(r(1),[1 p(1)]);
-y = tf(r(2),[1 p(2)]);
-z = tf(r(3),[1 p(3)]);
-partialFrac = [x y z];
+zeta = -log(5/100) / sqrt(pi^2 +log(5/100)^2);  % Damping ratio
+Wn = alpha / (2 * zeta);    % Natural frequency
+Wd = Wn * sqrt(1 - zeta^2);
+Tp = pi / Wd;   % Peak time
+Mp = exp((-pi  * zeta) / sqrt(1 - zeta^2)); % Percentage overshoot
+Ts =  4 / (zeta * Wn);   % Settling time
 
+fileID = fopen('C4.txt','w');
+fprintf(fileID,'%s\n\n','Time response Characteristics.');
+fprintf(fileID,'%s %4.6f\n','Damping ratio (zeta):',zeta);
+fprintf(fileID,'%s %4.6f\n','Natural frequency (Wn):',Wn);
+fprintf(fileID,'%s %4.6f\n','Peak time (Tp):',Tp);
+fprintf(fileID,'%s %4.6f\n','%OS (Mp):',Mp);
+fprintf(fileID,'%s %4.6f\n','Settling Time (Ts):',Ts);
+fclose(fileID);
 %% C5 - Calculate theretical gain required for 5% overshoot. Determine requried resistors.
 
 %% C6
