@@ -1,5 +1,5 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Theoretical Closed Loop Response\relax }}{12}{figure.caption.3}
-\contentsline {figure}{\numberline {2}{\ignorespaces Experimental Closed Loop Response\relax }}{12}{figure.caption.4}
+\contentsline {figure}{\numberline {2}{\ignorespaces Experimental Closed Loop Response\relax }}{13}{figure.caption.4}
 \contentsline {figure}{\numberline {3}{\ignorespaces Functional Diagram of the control system\relax }}{17}{figure.caption.5}
 \contentsline {figure}{\numberline {4}{\ignorespaces Updated Functional Diagram\relax }}{17}{figure.caption.6}
 \contentsline {figure}{\numberline {5}{\ignorespaces Simulated Response\relax }}{18}{figure.caption.7}
@@ -24,10 +24,15 @@
 \contentsline {figure}{\numberline {24}{\ignorespaces Difference Op-amp System\relax }}{44}{figure.caption.26}
 \contentsline {figure}{\numberline {25}{\ignorespaces Inverting Op-amp System\relax }}{44}{figure.caption.27}
 \contentsline {figure}{\numberline {26}{\ignorespaces Updated Functional Diagram\relax }}{45}{figure.caption.28}
-\contentsline {figure}{\numberline {27}{\ignorespaces Servo Motor Closed Response\relax }}{49}{figure.caption.29}
-\contentsline {figure}{\numberline {28}{\ignorespaces Systems response to various input frequencies.\relax }}{51}{figure.caption.30}
-\contentsline {figure}{\numberline {29}{\ignorespaces Oscilloscope Overshoot Measurements\relax }}{53}{figure.caption.31}
-\contentsline {figure}{\numberline {30}{\ignorespaces Oscilloscope SSE Measurements\relax }}{54}{figure.caption.32}
-\contentsline {figure}{\numberline {31}{\ignorespaces Systems response to various gain values.\relax }}{55}{figure.caption.33}
-\contentsline {figure}{\numberline {32}{\ignorespaces Systems response to various gain values.\relax }}{55}{figure.caption.34}
-\contentsline {figure}{\numberline {33}{\ignorespaces Time response of system.\relax }}{58}{figure.caption.35}
+\contentsline {figure}{\numberline {27}{\ignorespaces Time response of system.\relax }}{48}{figure.caption.29}
+\contentsline {figure}{\numberline {28}{\ignorespaces Servo Motor Closed Response\relax }}{51}{figure.caption.30}
+\contentsline {figure}{\numberline {29}{\ignorespaces Systems response to various input frequencies.\relax }}{53}{figure.caption.31}
+\contentsline {figure}{\numberline {30}{\ignorespaces Oscilloscope Overshoot Measurements\relax }}{55}{figure.caption.32}
+\contentsline {figure}{\numberline {31}{\ignorespaces Oscilloscope SSE Measurements\relax }}{56}{figure.caption.33}
+\contentsline {figure}{\numberline {32}{\ignorespaces Systems response to various gain values.\relax }}{57}{figure.caption.34}
+\contentsline {figure}{\numberline {33}{\ignorespaces Systems response to various gain values.\relax }}{57}{figure.caption.35}
+\contentsline {figure}{\numberline {34}{\ignorespaces Simulated PID Controller\relax }}{58}{figure.caption.36}
+\contentsline {figure}{\numberline {35}{\ignorespaces Closed loop response Experimental\relax }}{59}{figure.caption.37}
+\contentsline {figure}{\numberline {36}{\ignorespaces Simulated PID Controller Simulink\relax }}{59}{figure.caption.38}
+\contentsline {figure}{\numberline {37}{\ignorespaces PID Controller Vs Closed Loop Response\relax }}{60}{figure.caption.39}
+\contentsline {figure}{\numberline {38}{\ignorespaces PID Controller and Closed Loop Response Simulink\relax }}{60}{figure.caption.40}

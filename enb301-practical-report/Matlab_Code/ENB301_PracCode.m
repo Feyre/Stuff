@@ -606,6 +606,15 @@ ylabel('yc (voltage)')
 legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'C6_experimental'));
 close
+
+figure
+plot(tc_experimental,yc_experimental,'k')
+title('Closed Loop Experimental Data Plot')
+xlabel('tc (sec)')
+ylabel('yc (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
+print('-depsc',strcat('figures',filesep,'D4_experimental'));
+%close
 % different input frequencies (0.5Hz, 0.75Hz, 1Hz, 1.25Hz and 1.5Hz).
 %[mag,phase] = bode( G, imag(jw) )
 %http://stackoverflow.com/questions/22837372/how-to-replace-the-laplace-variable-in-a-transfer-function-with-a-number-value
@@ -735,3 +744,4 @@ K = Rf / R1;
 t = linspace(0,0.8,100);
 G_c = tf(K * Km, [1 alpha K * Km]);
 Y_c = 0.5 * step(G_c,t);
+
