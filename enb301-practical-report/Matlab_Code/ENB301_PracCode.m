@@ -689,3 +689,35 @@ legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'D2_1_50Hz'));
 close
 
+%% D3
+data = csvread('PartD3_22k.csv',2,0);  % Read in 0.5Hz
+td_22k = data(1:end,1);   % Store tc variable
+%td_22k = td_22k + abs(td_22k(1));
+yd_22k = data(1:end,3);   % Store yc variable
+yd_22kStep = data(1:end,2);   % Store tc step input variable
+[td_22k, yd_22k,yd_22kStep] = timing_fix_D3(td_22k,yd_22k,yd_22kStep);
+
+data = csvread('PartD3_100k.csv',2,0);  % Read in 0.75Hz
+td_100k = data(1:end,1);   % Store tc variable
+% td_100k = td_100k + abs(td_100k(1));
+yd_100k = data(1:end,3);   % Store yc variable
+yd_100kStep = data(1:end,2);   % Store tc step input variable
+[td_100k, yd_100k,yd_100kStep] = timing_fix_D3(td_100k,yd_100k,yd_100kStep);
+
+figure
+plot(td_22k,yd_22k,'k',td_22k,yd_22kStep,'b')
+title('Time Response [Rf = 22k]')
+xlabel('t (sec)')
+ylabel('y (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
+print('-depsc',strcat('figures',filesep,'D3_22k'));
+close
+
+figure
+plot(td_100k,yd_100k,'k',td_100k,yd_100kStep,'b')
+title('Time Response [Rf = 100k]')
+xlabel('t (sec)')
+ylabel('y (voltage)')
+legend('Motor Response', 'Step input', 'Location','SouthEast')
+print('-depsc',strcat('figures',filesep,'D3_100k'));
+close

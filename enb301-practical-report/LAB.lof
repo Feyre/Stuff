@@ -1,0 +1,33 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Theoretical Closed Loop Response\relax }}{12}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Experimental Closed Loop Response\relax }}{12}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Functional Diagram of the control system\relax }}{17}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Updated Functional Diagram\relax }}{17}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Simulated Response\relax }}{18}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Given Data and Estimated Response\relax }}{19}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Manually Estimated System Values\relax }}{20}{figure.caption.9}
+\contentsline {figure}{\numberline {8}{\ignorespaces Inverting Amplifier System\relax }}{21}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces Estimated System Response + Uncertainty\relax }}{22}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces Servo Motor Functional Diagram\relax }}{23}{figure.caption.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Updated Servo Motor Functional Diagram\relax }}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {12}{\ignorespaces Updated Servo Motor Functional Diagram\relax }}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {13}{\ignorespaces Updated Servo Motor Functional Diagram\relax }}{25}{figure.caption.15}
+\contentsline {figure}{\numberline {14}{\ignorespaces Estimated $K_m$ and $\alpha $ values\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {15}{\ignorespaces Original Step Response and Noisy Step Response\relax }}{30}{figure.caption.17}
+\contentsline {figure}{\numberline {16}{\ignorespaces Increased and Decreased noisey Step Response\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {17}{\ignorespaces Open Loop response\relax }}{32}{figure.caption.19}
+\contentsline {figure}{\numberline {18}{\ignorespaces Open Loop response\relax }}{33}{figure.caption.20}
+\contentsline {figure}{\numberline {19}{\ignorespaces Servo Motor Response Modified: $k_m$ and $\alpha $\relax }}{34}{figure.caption.21}
+\contentsline {figure}{\numberline {20}{\ignorespaces Servo Motor Response Modeled\relax }}{37}{figure.caption.22}
+\contentsline {figure}{\numberline {21}{\ignorespaces Servo Motor Response Modeled: $k_m$ and $\beta $\relax }}{38}{figure.caption.23}
+\contentsline {figure}{\numberline {22}{\ignorespaces Closed Loop Motor Control Schematic\relax }}{41}{figure.caption.24}
+\contentsline {figure}{\numberline {23}{\ignorespaces Closed Loop Motor Control System\relax }}{41}{figure.caption.25}
+\contentsline {figure}{\numberline {24}{\ignorespaces Difference Op-amp System\relax }}{42}{figure.caption.26}
+\contentsline {figure}{\numberline {25}{\ignorespaces Inverting Op-amp System\relax }}{42}{figure.caption.27}
+\contentsline {figure}{\numberline {26}{\ignorespaces Updated Functional Diagram\relax }}{43}{figure.caption.28}
+\contentsline {figure}{\numberline {27}{\ignorespaces Servo Motor Closed Response\relax }}{47}{figure.caption.29}
+\contentsline {figure}{\numberline {28}{\ignorespaces Systems response to various input frequencies.\relax }}{49}{figure.caption.30}
+\contentsline {figure}{\numberline {29}{\ignorespaces Oscilloscope Overshoot Measurements\relax }}{51}{figure.caption.31}
+\contentsline {figure}{\numberline {30}{\ignorespaces Oscilloscope SSE Measurements\relax }}{52}{figure.caption.32}
+\contentsline {figure}{\numberline {31}{\ignorespaces Systems response to various gain values.\relax }}{53}{figure.caption.33}
+\contentsline {figure}{\numberline {32}{\ignorespaces Systems response to various gain values.\relax }}{53}{figure.caption.34}
+\contentsline {figure}{\numberline {33}{\ignorespaces Time response of system.\relax }}{56}{figure.caption.35}
