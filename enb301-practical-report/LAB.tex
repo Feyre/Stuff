@@ -166,7 +166,7 @@ limitations\\
 The purpose of this report is to demonstrate sound knowledge and understanding of basic control systems; more specifically, closed loop feedback systems. This report entails (beyond other things) the procedures followed during the practical lab, the associated results or observational data, and the answers to all questions posed during the lab.  
 
 \section{Introduction:}
-\textbf{0.5-1 page overview of the lab}\\
+%\textbf{0.5-1 page overview of the lab}\\
 
 
 
@@ -1693,7 +1693,7 @@ The percentage error between the calculated and experimentally found gain values
 \%_{error} &= |\frac{6.28 - 2.4}{2.4}| \times 100 \\
 \%_{error} &= 61.8\% 
 \end{align*}
-A large \% error value, as indicated above; provides strong evidence for model inaccuracies. The difference in gain between the theoretical and the practical values is likely caused losses that have been neglected from the simulation. \textbf{and we used the wrong values} 
+A large \% error value, as indicated above; provides strong evidence for model inaccuracies. The difference in gain between the theoretical and the practical values is likely caused losses that have been neglected from the simulation. %\textbf{and we used the wrong values} 
 
 The overshoot resulting from the derived gain value was under 5\%. 
 
@@ -1705,7 +1705,7 @@ A good example of a control system that requires low steady state error is the c
 
 As mentioned previously, a PI compensator would remove the steady state error, but a PID controller would be the likely choice for a cruise control system, as elements from both a PI and a PD controller are wanted. The lack of steady state error, and a longer settling time and no peak overshoot are all possible when using a PID controller (with a focus on the derivative element).
 
-\textbf{Add the actual OS from prac/theo} \\
+%\textbf{Add the actual OS from prac/theo} \\
 
     
     
@@ -2046,78 +2046,4 @@ ylabel('Amplitude');
 xlabel('Time_{sec}');
 \end{lstlisting}
 \end{enumerate}
-
-
-
-
-
-
-
-
-
-
-\pagebreak
-\section{CHECKLIST}
-\begin{enumerate}
-	\item Executive Summary
-	\item Introduction
-	\item Procedure Intro
-	\item Procedure (D) - add new method
-	\item \textcolor{green}{Results (B)}
-	\item Results (C)
-	\begin{enumerate}
-		\item Is the transfer function as we'ed expect?
-		\item \textcolor{green}{Closed loop response figures (theoretical gain or given gain?)}
-		\item What can be seen from the figures
-		\item \textcolor{green}{Experimental gain figures}
-		\item What can be seen from this
-		\item \textcolor{green}{Compare models}
-		\item \textcolor{blue}{Compare gains}
-		\item \textbf{NEW METHOD for finding TF}
-	\end{enumerate}
-	\item Results (D)
-	\begin{enumerate}
-		\item \textbf{DO NEW METHOD}
-		\item \textcolor{blue}{Check tables peak overshoot}
-		%\item \textcolor{blue}{Find word}
-		%\item \textcolor{blue}{Check results are right (freq doesnt affect system)}
-		\item \textcolor{blue}{Why is the effect of gain useful?}
-		\item \textcolor{green}{SIMULINK MODEL}
-		\item \textcolor{green}{PI/PD controller}
-	\end{enumerate}
-	\item \textbf{DISCUSSION and RECOMMENDATIONS}
-	\item \textcolor{green}{Answers (B) - add more words?}
-	\item Answers (C)
-	\begin{enumerate}
-		\item \textcolor{blue}{Fix figures}
-		\item \textcolor{green}{Add non-ideal method}
-		\item \textcolor{green}{C(4)}
-		\item \textcolor{blue}{Finish C(7)}
-		\item \textbf{NEW METHOD for finding TF}
-	\end{enumerate}
-	\item Answers (D) 
-	\begin{enumerate}
-		\item \textbf{DO NEW METHOD}
-		\item \textcolor{blue}{Does frequency affect anything?}
-		\item \textcolor{blue}{Prove how gain affects shit}
-		\item \textcolor{green}{SIMULINK MODEL}
-		\item \textcolor{green}{PI/PD controller}
-	\end{enumerate}
-\end{enumerate}
-
-
-
-
-
-
-NOTES:
-on first page, acknowledge assistance from students 
-list group members / lab members
-
-
-%\subsection{Exercise Alpha}
-
-
-
-
 \end{document}
