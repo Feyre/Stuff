@@ -52,6 +52,50 @@ legend('Motor Response', 'Step input', 'Location','SouthEast')
 print('-depsc',strcat('figures',filesep,'B1_dataset3'));
 close
 
+%% B2
+alpha = 1;
+km=1;
+G = tf(km,[1 alpha 0]);
+
+G_0 = step(G,te_1);
+figure
+hold on
+plot(te_1,G_0,'r')
+plot(te_1,ye_1-ye_1(1),'b')
+title('Simulated Step Response and Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('Simulated Step Response','Test Data')
+hold off
+print('-depsc',strcat('figures',filesep,'B2_dataset1'));
+close
+
+G_0 = step(G,te_2);
+figure
+hold on
+plot(te_2,G_0,'r')
+plot(te_2,ye_2-ye_2(1),'b')
+title('Simulated Step Response and Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('Simulated Step Response','Test Data')
+hold off
+print('-depsc',strcat('figures',filesep,'B2_dataset2'));
+close
+
+G_0 = step(G,te_3);
+figure
+hold on
+plot(te_3,G_0,'r')
+plot(te_3,ye_3-ye_3(1),'b')
+title('Simulated Step Response and Test Data')
+xlabel('t (sec)')
+ylabel('Amplitude')
+legend('Simulated Step Response','Test Data')
+hold off
+print('-depsc',strcat('figures',filesep,'B2_dataset3'));
+close
+
 %% B3 
 % B3 - Derive single figure of merit: Used both Mean Square figure of merit
 % and Root Mean Square figure of Merit
@@ -351,10 +395,12 @@ for iteration = 1:3
            error_rms = 0;
        end
 
+    end
+    
+    
         % Output km iterations
        %count = count + 1;       
        %fprintf('%d %s %d\n',count,'/',km_num);
-    end
 
     % Calculate km and alpha values for mean square error calculation
     [~,index] = min(output_ms(3,:));
