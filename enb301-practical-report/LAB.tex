@@ -170,6 +170,10 @@ The purpose of this report is to demonstrate sound knowledge and understanding o
 \textbf{0.5-1 page overview of the lab}
 
 
+\pagebreak
+{\hypersetup{linkcolor=black} \tableofcontents}
+\pagebreak
+{\hypersetup{linkcolor=black} \listoffigures}
 
 
 
@@ -177,9 +181,7 @@ The purpose of this report is to demonstrate sound knowledge and understanding o
 
 
 
-
-
-
+\pagebreak
 \section{Procedure:}
 \textbf{brief summary of prac procedure as described in this document (0.5-1page for each part (bcd))}\\
 This section consists of individual summaries of the procedures required in each section, accomplished during the practical labs.
@@ -453,12 +455,23 @@ $$ G_c(s) = \frac{1075.8} {s^2 + 38.61s + 1075.8} $$\\
 %\textbf{This is/isnt what we'de expect}\\
 
 After constructing the circuit shown in figure~\ref{fig:c1_2_} and asserting the correct polarity of the motor, the response of the system was captured and saved by the digital CRO. The closed loop response of this system was measured \textcolor{red}{3} times, and the graphical representation of this data has been included below.\\
+	\begin{figure}[H]
+		\centering
+			\includegraphics[width=0.5\linewidth]{Ossilloscope/PartC_Theoretical_Overshoot.png} 
+			\caption{Theoretical Closed Loop Response}
+			\label{fig:subim1}
+	\end{figure}
 
-\textbf{FIGURES}\\
 
-WHAT WE CAN SEE FROM THIS (AS VOLTAGE GOES UP, THIS GOES UP), and here is the closed loop response with experimentally found gain required to produce an overshoot of 5\%.\\
+WHAT WE CAN SEE FROM THIS (AS VOLTAGE GOES UP, THIS GOES UP) \\
+Moreover, below is the recorded systems response after experimentally changing the resistor values, and hence the gain, to produce a 5\% overshoot. The experimental resistor values used to produce this overshoot were as follows; $R_1 = 10k$, $R_f = 62.8k \approx 56k + 6.8k$, resulting in a gain of $K = 6.28$. 
 
-\textbf{FIGURES}\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{Ossilloscope/PartC_Experimental_Overshoot.png}
+		\caption{Experimental Closed Loop Response}
+		\label{fig:subim2}
+	\end{figure}
 
 WHAT WE CAN SEE FROM THIS\\
 
@@ -468,12 +481,12 @@ new method\\
 
 
 
-closed loop control system for the position of the motor
-overall TF
-estimated gain for 5\% OS
-practical gain for 5\% OS
-comparisons
-C8
+closed loop control system for the position of the motor\\
+overall TF\\
+estimated gain for 5\% OS\\
+practical gain for 5\% OS\\
+comparisons\\
+C8\\
 
 
 
@@ -505,7 +518,7 @@ After measuring and recording the systems response and percentage overshoot for 
  
 Both the above table, and the systems response (figure~\ref{fig:freqimpact}) show clearly that increasing the frequency has no effect on overshoot, settling time, or steady state error. However, after the frequency exceeds a certain limit (\textbf{$1/f < Ts$}) the system does not have enough time to reach a steady state value. Moreover, if the frequency of the input where to continue increasing, eventually the operation amplifier will begin attenuating the output voltage. 
 
-The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- \textbf{frequency should not affect any circuit properties.} Additionally, the approximated transfer function of this system is independent of the input frequency, or more simply;
+The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- \textbf{frequency should not affect any circuit properties.} \textcolor{red}{Additionally, the approximated transfer function of this system is independent of the input frequency, or more simply;}
 \begin{align*}
 G_c(s) &= \frac{\frac{R_f}{R_1}K_m} {s^2 + s\alpha + \frac{R_f}{R_1}K_m}
 \end{align*}
@@ -936,7 +949,7 @@ close
 
 
 
-\pagebreak
+\pagebreak~\pagebreak
 \subsection{Answers:}
 \subsubsection{Part B}
 \begin{enumerate}
@@ -1508,7 +1521,7 @@ From Difference Op Amp: $V_o(s) = V_i(s) - V_p(s)$
     
     As can be seen, both the of the above methods produce the same result, the first requiring more complex algebra and all of the calculated transfer functions; the second method understands that the summing amplifier and inverting amplifier can be modeled as a summing node and gain block respectively (refer to figure~\ref{fig:updatedfuncagram}).
     
-    Where $K_m = 326$, $\alpha = 38.61$, $R_f = 33k$ and $R_1 = 10k$.
+    From previously, $K_m = 326$, $\alpha = 38.61$, $R_f = 33k$ and $R_1 = 10k$.
     Thus,
     
     \begin{align*}
@@ -1606,20 +1619,6 @@ From Difference Op Amp: $V_o(s) = V_i(s) - V_p(s)$
 		\end{subfigure} 
 	\caption{\label{fig:rand}Servo Motor Closed Response}
 	\end{figure}
-
-	\begin{figure}[H]
-		\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.9\linewidth]{Ossilloscope/PartC_Theoretical_Overshoot.png} 
-		\caption{Theoretical Closed Loop Response}
-		\label{fig:subim1}
-		\end{subfigure}
-		\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=0.9\linewidth]{Ossilloscope/PartC_Experimental_Overshoot.png}
-		\caption{Experimental Closed Loop Response}
-		\label{fig:subim2}
-		\end{subfigure} 
-	\caption{\label{fig:rand}Servo Motor Closed Response}
-	\end{figure}
 	
 	\begin{center}
 		$\%OS = \frac{V_{max} - V_{avg}}{V_{avg}} \times 100$
@@ -1647,17 +1646,19 @@ The percentage error between the calculated and experimentally found gain values
 \%_{error} &= |\frac{6.28 - 2.4}{2.4}| \times 100 \\
 \%_{error} &= 61.8\% 
 \end{align*}
-A large \% error value, as indicated above; provides strong evidence for model inaccuracies. The difference in gain between the theoretical and the practical values is likely caused by \textbf{WHAT}. 
+A large \% error value, as indicated above; provides strong evidence for model inaccuracies. The difference in gain between the theoretical and the practical values is likely caused losses that have been neglected from the simulation. \textbf{and we used the wrong values} 
 
 The overshoot resulting from the derived gain value was under 5\%. 
 
 Steady state error was noticeable in the system, likely caused by mechanical losses (gearbox, heat, etc). To alleviate this issue, a PI compensator (integrator) could be used; this is because the PI controller adds up error over time and would remove the steady state error. Moreover, a PI controller retains a maximum overshoot and settling time similar to that of the proportional controller (adjusting the gain alone). 
 
-However, the drawbacks for a PI controller include, but are not limited too; \textbf{WHAT}.
+However, the drawbacks for a PI controller, depending on the application may include; the relatively faster settling time, or the possible overshoot, when compared to the effects of a PD controller.  
 
-A good example of a control system that required low steady state error is the cruise control on a car. This is largely 
+A good example of a control system that requires low steady state error is the cruise control on a car. This is largely to do with its specific application where the output were to be increased beyond the target output due to stead state error, the result could be decremental to safety, cause injury or even fatality. Moreover, any overshoot in the response would also have the ability to incur the previously mentioned effects. However, the systems response time is arguably less important, in fact it is dispersible to have a slower response time to avoid a large acceleration which would result in larger forces acting upon the driver, and could even reduce the vehicles stability or traction.
 
-Add the actual OS from prac/theo \\
+As mentioned previously, a PI compensator would remove the steady state error, but a PID controller would be the likely choice for a cruise control system, as elements from both a PI and a PD controller are wanted. The lack of steady state error, and a longer settling time and no peak overshoot are all possible when using a PID controller (with a focus on the derivative element).
+
+\textbf{Add the actual OS from prac/theo} \\
 
     
     
@@ -1666,7 +1667,7 @@ Add the actual OS from prac/theo \\
     
     
     
-	\item Another method of calculating TF? (bode)
+	\item \textcolor{red}{Another method of calculating TF? (bode)}
 \end{enumerate}
 
 
@@ -1682,7 +1683,7 @@ Add the actual OS from prac/theo \\
 \subsubsection{Part D}
 \label{sec:d}
 \begin{enumerate}
-	\item stuff
+	\item \textcolor{red}{ANOTHER METHOD}
 	
 	
 	

@@ -1,0 +1,6 @@
+# keep these
+!**/.gitkeep
+
+# always ignore o files
+**/.aux
+**/.log
