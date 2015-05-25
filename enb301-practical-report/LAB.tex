@@ -158,12 +158,16 @@ The results of the previously mentioned experiments, beyond showing clearly the 
 The purpose of this report is to demonstrate sound knowledge and understanding of basic control systems; more specifically, closed loop feedback systems. This report entails (beyond other things) the procedures followed during the practical lab, the associated results or observational data, and the answers to all questions posed during the lab.  
 
 \section{Introduction:}
+<<<<<<< HEAD
 Part A was the the laboratory work performed by each individual member of the group. Basic analysis of the of an example set of servo motor was used.\\\\
 
 Part B considered an open loop servo motor system and used the prelab completed in part A to calculate the $K_m$ and $\alpha$ values. 
 
 Part C and D considered the close loop response and a detailed examination of closed loop aspects were investigated. A PID controller was used to optimise the system.\\
 Time response characteristics were also analysed.
+=======
+%\textbf{0.5-1 page overview of the lab}\\
+>>>>>>> origin/master
 
 
 
@@ -523,7 +527,7 @@ After measuring and recording the systems response and percentage overshoot for 
  
 Both the above table, and the systems response (figure~\ref{fig:freqimpact}) show clearly that increasing the frequency has no effect on overshoot, settling time, or steady state error. However, after the frequency exceeds a certain limit (\textbf{$1/f < Ts$}) the system does not have enough time to reach a steady state value. Moreover, if the frequency of the input where to continue increasing, eventually the operation amplifier will begin attenuating the output voltage. 
 
-The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- \textbf{frequency should not affect any circuit properties.} \textcolor{red}{Additionally, the approximated transfer function of this system is independent of the input frequency, or more simply;}
+%The reason the frequency has no effect on these values, as explained in section~\ref{sec:d}, is that the circuit contains no energy storing devices (such as capacitors or inductors), and as such- \textbf{frequency should not affect any circuit properties.} \textcolor{red}{Additionally, the approximated transfer function of this system is independent of the input frequency, or more simply;}
 \begin{align*}
 G_c(s) &= \frac{\frac{R_f}{R_1}K_m} {s^2 + s\alpha + \frac{R_f}{R_1}K_m}
 \end{align*}
@@ -552,8 +556,20 @@ Refer to Appendix for PID controller information.
 
 
 \pagebreak
-\section{Discussion/Recommendations:}
-\textbf{0.5-1page}\\
+\section{Discussion:}
+Throughout the practical experiment, many important observations and analytical breakthroughs had taken place; these observations included the system response of an open loop motor control system and how fundamental properties of the estimated transfer function affect the simulated response. Moreover, the practical application of closed loop control systems were explored, and the advantages of using a closed loop system became evident, specifically in relation to controlling a servo motors shaft angle output. In addition to this, the effects of varying the input frequency where found to be minimal, whilst altering the systems gain provided a unique method of controlling system properties (such as overshoot, and settling time). 
+
+Many further analysis procedures were conducted to show relationships such as how a PI compensator can be utilized to remove a systems steady state error; or how the more flexible PID controller can alleviate steady state error and provides the ability to manipulate and control the systems response to a greater degree.    
+
+
+
+
+However, in future the following improvements to the program could be taken into consideration;
+\begin{enumerate}
+	\item A longer and more thorough introduction to some of the more technical features matlab has to offer.
+	\item Reduce the complexity of the practical layout.
+	\item Introduce assessed weekly lab sessions devoted to experiment preparation. 
+\end{enumerate}
 
 
 
@@ -1741,7 +1757,7 @@ The percentage error between the calculated and experimentally found gain values
 \%_{error} &= |\frac{6.28 - 2.4}{2.4}| \times 100 \\
 \%_{error} &= 61.8\% 
 \end{align*}
-A large \% error value, as indicated above; provides strong evidence for model inaccuracies. The difference in gain between the theoretical and the practical values is likely caused losses that have been neglected from the simulation. \textbf{and we used the wrong values} 
+A large \% error value, as indicated above; provides strong evidence for model inaccuracies. The difference in gain between the theoretical and the practical values is likely caused losses that have been neglected from the simulation. %\textbf{and we used the wrong values} 
 
 The overshoot resulting from the derived gain value was under 5\%. 
 
@@ -1753,7 +1769,7 @@ A good example of a control system that requires low steady state error is the c
 
 As mentioned previously, a PI compensator would remove the steady state error, but a PID controller would be the likely choice for a cruise control system, as elements from both a PI and a PD controller are wanted. The lack of steady state error, and a longer settling time and no peak overshoot are all possible when using a PID controller (with a focus on the derivative element).
 
-\textbf{Add the actual OS from prac/theo} \\
+%\textbf{Add the actual OS from prac/theo} \\
 
     
     
@@ -1849,7 +1865,7 @@ As mentioned previously, a PI compensator would remove the steady state error, b
 	
 	It is also evident from the previous figures and tables, that neither the overshoot, settling time or the steady state error are effected; until eventually the system does not have enough time to reach a steady state value. In addition to this, were the frequency to keep increasing, eventually the op-amps physical components would not be able to switch fast enough, and the output would be attenuated.\\
 	
-	The frequency does not effect any of the aforementioned properties, because quite simply; \textcolor{red}{the transfer function to which these properties can be derived, is independent of frequency. Which is to be expected, as there are no energy storing components in the system (capacitors, inductors).} 
+	%The frequency does not effect any of the aforementioned properties, because quite simply; \textcolor{red}{the transfer function to which these properties can be derived, is independent of frequency. Which is to be expected, as there are no energy storing components in the system (capacitors, inductors).} 
 
 \begin{figure}[H]
   \begin{subfigure}{0.5\textwidth}
@@ -2076,78 +2092,4 @@ ylabel('Amplitude');
 xlabel('Time_{sec}');
 \end{lstlisting}
 \end{enumerate}
-
-
-
-
-
-
-
-
-
-
-\pagebreak
-\section{CHECKLIST}
-\begin{enumerate}
-	\item Executive Summary
-	\item Introduction
-	\item Procedure Intro
-	\item Procedure (D) - add new method
-	\item \textcolor{green}{Results (B)}
-	\item Results (C)
-	\begin{enumerate}
-		\item Is the transfer function as we'ed expect?
-		\item \textcolor{green}{Closed loop response figures (theoretical gain or given gain?)}
-		\item What can be seen from the figures
-		\item \textcolor{green}{Experimental gain figures}
-		\item What can be seen from this
-		\item \textcolor{green}{Compare models}
-		\item \textcolor{blue}{Compare gains}
-		\item \textbf{NEW METHOD for finding TF}
-	\end{enumerate}
-	\item Results (D)
-	\begin{enumerate}
-		\item \textbf{DO NEW METHOD}
-		\item \textcolor{blue}{Check tables peak overshoot}
-		%\item \textcolor{blue}{Find word}
-		%\item \textcolor{blue}{Check results are right (freq doesnt affect system)}
-		\item \textcolor{blue}{Why is the effect of gain useful?}
-		\item \textcolor{green}{SIMULINK MODEL}
-		\item \textcolor{green}{PI/PD controller}
-	\end{enumerate}
-	\item \textbf{DISCUSSION and RECOMMENDATIONS}
-	\item \textcolor{green}{Answers (B) - add more words?}
-	\item Answers (C)
-	\begin{enumerate}
-		\item \textcolor{blue}{Fix figures}
-		\item \textcolor{green}{Add non-ideal method}
-		\item \textcolor{green}{C(4)}
-		\item \textcolor{blue}{Finish C(7)}
-		\item \textbf{NEW METHOD for finding TF}
-	\end{enumerate}
-	\item Answers (D) 
-	\begin{enumerate}
-		\item \textbf{DO NEW METHOD}
-		\item \textcolor{blue}{Does frequency affect anything?}
-		\item \textcolor{blue}{Prove how gain affects shit}
-		\item \textcolor{green}{SIMULINK MODEL}
-		\item \textcolor{green}{PI/PD controller}
-	\end{enumerate}
-\end{enumerate}
-
-
-
-
-
-
-NOTES:
-on first page, acknowledge assistance from students 
-list group members / lab members
-
-
-%\subsection{Exercise Alpha}
-
-
-
-
 \end{document}
