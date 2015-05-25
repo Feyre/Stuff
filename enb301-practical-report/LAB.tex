@@ -1444,11 +1444,11 @@ A large \% error value, as indicated above; provides strong evidence for model i
 
 The overshoot resulting from the derived gain value was under 5\%. 
 
-Steady state error \textbf{was} noticeable in the system, likely caused by mechanical losses (gearbox, heat, etc). To alleviate this issue, an PI compensator (integrator) could be used; this is because the PI controller adds up error over time, and would \textbf{know that it had still not yet reached the desired output}. Whereas, currently; the error signal of the proportional controller \textbf{does what?}.
+Steady state error was noticeable in the system, likely caused by mechanical losses (gearbox, heat, etc). To alleviate this issue, a PI compensator (integrator) could be used; this is because the PI controller adds up error over time and would remove the steady state error. Moreover, a PI controller retains a maximum overshoot and settling time similar to that of the proportional controller (adjusting the gain alone). 
 
 However, the drawbacks for a PI controller include, but are not limited too; \textbf{WHAT}.
 
-What control applications require very low SSE? \\
+A good example of a control system that required low steady state error
 
 Add the actual OS from prac/theo \\
 
