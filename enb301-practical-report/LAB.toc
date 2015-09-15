@@ -10,14 +10,13 @@
 \contentsline {subsection}{\numberline {6.1}Part B}{8}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Part C}{12}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Part D}{14}{subsection.6.3}
-\contentsline {section}{\numberline {7}Discussion/Recommendations:}{16}{section.7}
-\contentsline {section}{\numberline {8}Appendices}{17}{section.8}
-\contentsline {subsection}{\numberline {8.1}Pre-lab:}{17}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Lachlan Nicholson}{17}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Declan Gilmour}{24}{subsubsection.8.1.2}
-\contentsline {subsection}{\numberline {8.2}Answers:}{34}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Part B}{34}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Part C}{43}{subsubsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.3}Part D}{53}{subsubsection.8.2.3}
-\contentsline {subsection}{\numberline {8.3}Prac Code}{61}{subsection.8.3}
-\contentsline {section}{\numberline {9}CHECKLIST}{62}{section.9}
+\contentsline {section}{\numberline {7}Discussion:}{15}{section.7}
+\contentsline {section}{\numberline {8}Appendices}{16}{section.8}
+\contentsline {subsection}{\numberline {8.1}Pre-lab:}{16}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Lachlan Nicholson}{16}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Declan Gilmour}{23}{subsubsection.8.1.2}
+\contentsline {subsection}{\numberline {8.2}Answers:}{33}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Part B}{33}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Part C}{42}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}Part D}{52}{subsubsection.8.2.3}
+\contentsline {subsection}{\numberline {8.3}Prac Code}{60}{subsection.8.3}
